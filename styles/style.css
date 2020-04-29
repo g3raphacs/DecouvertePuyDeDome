@@ -81,6 +81,8 @@
 /* classes background */
 .BCKPrimary{background-color: var(--Col_Main);}
 .BCKDark{background-color: var(--Col_Black);}
+/* shadows */
+.shadow{box-shadow: 0px 2px 6px var(--Col_Shadow);}
 
 /*COLOR VALUES>>____________________________________________________________________________________*/
 
@@ -123,10 +125,11 @@ body{
 .m0child *{margin: 0px;}
 /* Box Model>>______________________________________________________________ */
 
+/* transforms */
+.rotRight{transform: rotate(3deg);}
 /* NAVBAR<<______________________________________________________________ */
 #navbar{
     width: 100%;
-    box-shadow: 0px 2px 6px var(--Col_Shadow);
     position: fixed;
     position: top;
     z-index: 2;
@@ -258,6 +261,7 @@ nav li a{
     color: rgb(255, 255, 255);
     background-color:rgb(0, 154, 168);
     border-radius: 70px 5px;
+    box-shadow:3px 3px 20px rgba(0, 0, 0, 0.164);
 }
 /* Slogan>>______________________________________________________________ */
 
@@ -276,30 +280,44 @@ nav li a{
 }
 /* Fleche>>______________________________________________________________ */
 
-#logoLarge{
-    padding: 0px 20px;
-    padding-top: 10vw;
-    padding-bottom: 3vw;
-}
 main{
         text-align: center;
         position: relative;
-        top: -10vw;
+        top: 18vw;
 }
-
-
-
+/* TITLES>>______________________________________________________________ */
 #blocTitle{
-    margin-top: 0px;
     margin-bottom: 0px;
     padding-top: 1px;
     padding-bottom: 1px;
     box-shadow: 0px 2px 6px var(--Col_Shadow);
     margin-top: 8vw;
-    background-color: var(--Col_Main);
-    /* background-image:  linear-gradient(180deg,var(--Col_Grad1),var(--Col_Grad2)); */
-
+    background-color: var(--Col_Black);
 }
+.colorLine{
+    height: 5vw;
+    display: flex;
+}
+.colorLine>div{
+    width: 25%;
+}
+.colorLine>div:nth-child(1){
+    background-color: var(--Col_Main);
+}
+.colorLine>div:nth-child(2){
+    background-color: var(--Col_Sec);
+}
+.colorLine>div:nth-child(3){
+    background-color: var(--Col_Comp);
+}
+.colorLine>div:nth-child(4){
+    background-color: var(--Col_SecLight);
+}
+.colorLine-small{
+    height: 10px;
+}
+
+
 h1{
     font-size: 1.8em;
     color: white;
@@ -308,27 +326,72 @@ h1{
     font-weight: 500;
     padding-top: 8vw;
     padding-bottom: 8vw;
-    
 }
 
 h2{
     font-family: 'Baloo Paaji 2', cursive;
     font-weight: 400;
-    font-size: 1.9em;
+    font-size: 1.4em;
     color: rgb(6, 96, 115);
     letter-spacing: 0.05em;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-bottom: 1px solid rgb(6, 96, 115);
-    
 }
 
-.sec{
+/* SECTIONS>>______________________________________________________________ */
+.secTopBar{
+    height: 100px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 60px 0px 0px;
+    background-color: var(--Col_Black);
+    border-right: 15px solid var(--Col_Comp);
+}
+.secTopBarR{
+    height: 100%;
+    background-color: var(--Col_Main);
+    border-left: 20px solid var(--Col_Comp);
+    width: 100px;
+    margin-right: 20px;
+}
+.secTopBar h2{
+    color: white;
+}
+.secPost{
     background-color: rgba(255, 255, 255,0.85);
-    padding:10px 30px;
-    border-radius: 0px 60px;
+    border-radius: 0px 0px 0px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec{
     margin-top: 8vw;
+    border-radius: 0px 60px 0px 60px;
     box-shadow: 3px 3px 10px rgba(10, 99, 117,0.25);
+
+}
+.post{
+    background-color: var(--Col_Main);
+    border-right: 15px solid var(--Col_Comp);
+    flex: 0 60%;
+    
+}
+.post>div{
+    padding: 30px 5vw;
+}
+.postillu{
+    flex: 0 40%;
+}
+.postillu>div{
+}
+.postillu>div img{
+    box-sizing: border-box;
+    padding: 30px 5vw;
+    display: box;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 p strong{
@@ -459,10 +522,6 @@ aside img{
 /* RESPONSIVE<<_________________________________________________________ */
 /* small<<______________________________ */
 @media (min-width:650px){
-    .illuGal{
-        text-align: center;
-        flex: 0 49%;  
-    }
 
 }
 /* medium<<______________________________ */
@@ -485,31 +544,7 @@ aside img{
         width: 85%;
         max-width: 1200px;
     }
-    .illu{
-        float: left;
-        margin: 5px 15px 5px 0px;
-        width:400px;
-        text-align: center;
-        height: 100%;
-        
-        
-    }
-    .illu img{
-        float: left;
-        margin: 5px 15px 5px 0px;
-        object-fit: contain;
-        width: 400px;
-        max-width: 400px;
-        height: 100%;
-    
-    }
-    .galerie{
-        flex: 0 65%;
-    }
-    aside{
-        flex: 0 25%;
-        align-self: center;
-    }
+
 }
 /* large<<______________________________ */
 @media (min-width:1190px){
