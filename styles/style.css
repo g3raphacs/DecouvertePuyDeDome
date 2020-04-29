@@ -379,7 +379,7 @@ h2{
     padding: 30px 5vw;
 }
 .post p:first-child::first-letter{
-    display: inline-block;
+    display: block;
     font-size: 4rem;
     float: left;
     font-weight: bold;
