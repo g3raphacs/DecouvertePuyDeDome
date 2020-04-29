@@ -1,0 +1,541 @@
+/*FONTS<<____________________________________________________________________________________*/
+/* Font Icons<<______________________________________________________________ */
+@font-face {
+    font-family: 'Glyphter';
+    src: url('../fonts/Glyphter.eot');
+    src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Glyphter.woff') format('woff'),
+         url('../fonts/Glyphter.ttf') format('truetype'),
+         url('../fonts/Glyphter.svg#Glyphter') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='icon-']:before{
+	display: inline-block;
+   font-family: 'Glyphter';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+.icon-foires:before{content:'\0041';}
+.icon-Accueil:before{content:'\0042';}
+.icon-Lieux:before{content:'\0043';}
+.icon-news:before{content:'\0044';}
+.icon-mail:before{content:'\0045';}
+/* Font Icons>>______________________________________________________________ */
+
+/* font types */
+.fontSec{font-family: 'Baloo Paaji 2', cursive;}
+.fontI{font-style: italic;}
+.fontB{font-weight: bold;}
+.fontSB{font-weight: 600;}
+/* font sizes */
+.fSize220{ font-size: 13.75rem}
+.fSize120{ font-size: 7.5rem}
+.fSize48{ font-size: 3rem}
+.fSize36{ font-size: 2.25rem}
+.fSize34{ font-size: 2.13rem}
+.fSize24{ font-size: 1.5rem}
+.fSize20{ font-size: 1.25rem}
+.fSize18{ font-size: 1.13rem}
+.fSize16{ font-size: 1rem}
+.fSize15{ font-size: 0.94rem}
+.fSize14{ font-size: 0.88rem}
+.fSize13{ font-size: 0.81rem}
+.fSize12{ font-size: 0.75rem}
+/* font positioning */
+.fspace{letter-spacing: 2rem;}
+.TXTleft{text-align: center;}
+.TXTcenter{text-align: center;}
+.TXTjustif{text-align: justify;}
+.TXTlineL{line-height: 2rem;}
+.TXTlineXL{line-height: 3rem;}
+/*FONTS>>____________________________________________________________________________________*/
+
+/*COLOR VALUES<<____________________________________________________________________________________*/
+:root{
+    --Col_MainLight: #98efff;
+    --Col_Main: #009aa8;
+    --Col_Comp: #fd8a76;
+    --Col_Sec: #514621;
+    --Col_SecLight: #aaa246;
+    --Col_Grad1: rgba(0, 255, 255, 0.445);
+    --Col_Grad2: #B1F3EB;
+    --Col_Gray:  #4B504D;
+    --Col_Black: #0d110d;
+    --Col_White_a95: rgba(255, 255, 255, 0.95);
+    --Col_Shadow: rgba(0, 0, 0, 0.5);
+}
+/* classes text */
+.TXTdark{color: var(--Col_Black);}
+.TXTmed{color: var(--Col_Gray);}
+.TXTmainlight{color: var(--Col_MainLight);}
+.TXTmaindark{color: var(--Col_MainDark);}
+.TXThighlight{color: var(--Col_Highlight);}
+.TXTcomp{color: var(--Col_Comp);}
+.TXTwhite{color:white;}
+.TXTdarkblue{color: var(--Col_BlueDark);}
+.TXTblue{color: var(--Col_BlueNormal);}
+/* classes background */
+.BCKPrimary{background-color: var(--Col_Main);}
+.BCKDark{background-color: var(--Col_Black);}
+
+/*COLOR VALUES>>____________________________________________________________________________________*/
+
+.flexCenterCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Generic<<______________________________________________________________ */
+
+body{
+    font-size: 16px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    background-image: url("/Images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0px;
+    margin:0px;
+    height: 100%;
+    line-height:1.5rem;
+    letter-spacing: 0.05rem;
+    color: var(--Col_Gray);
+}/* Generic>>______________________________________________________________ */
+
+/* Containers<<______________________________________________________________ */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}/* Containers>>______________________________________________________________ */
+
+/* Box Model<<______________________________________________________________ */
+.m0{margin: 0px;}
+.p0{padding: 0px;}
+.mp0{margin: 0px; padding: 0px;}
+.m0child *{margin: 0px;}
+/* Box Model>>______________________________________________________________ */
+
+/* NAVBAR<<______________________________________________________________ */
+#navbar{
+    width: 100%;
+    box-shadow: 0px 2px 6px var(--Col_Shadow);
+    position: fixed;
+    position: top;
+    z-index: 2;
+    background-color: var(--Col_Black);
+    /* margin-top: 30px; */
+}
+/* nav buttons */
+#navbar [href]{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 400;
+}
+#navButtons a.current{
+    font-weight: 600;
+}
+#navButtons> li:nth-child(1) a:hover{
+    background-color: var(--Col_Main);
+}
+#navButtons> li:nth-child(2) a:hover{
+    background-color: var(--Col_Sec);
+}
+#navButtons> li:nth-child(3) a:hover{
+    background-color: var(--Col_Comp);
+}
+#navButtons> li:nth-child(4) a:hover{
+    background-color: var(--Col_SecLight);
+}
+
+#navButtons> li:nth-child(1) a.current{
+    border-bottom: 5px solid var(--Col_Main);
+    background-color: rgb(0, 0, 0);
+    padding-top: 5px;
+}
+#navButtons> li:nth-child(2) a.current{
+    border-bottom: 5px solid var(--Col_Sec);
+    background-color: rgb(0, 0, 0);
+    padding-top: 5px;
+}
+#navButtons> li:nth-child(3) a.current{
+    border-bottom: 5px solid var(--Col_Comp);
+    background-color: rgb(0, 0, 0);
+    padding-top: 5px;
+}
+#navButtons> li:nth-child(4) a.current{
+    border-bottom: 5px solid var(--Col_SecLight);
+    background-color: rgb(0, 0, 0);
+    padding-top: 5px;
+}
+
+#navbar ul{padding:0px;}
+
+#logo{
+    flex: 0 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+#logo img{
+    display: box;
+    object-fit: contain;
+    width: 90%;
+    height: 110px;
+}
+nav{
+    display: flex;
+    align-items: stretch;
+    flex: 0 100%;
+}
+nav li{
+    list-style: none;
+    line-height:2em;
+    font-weight: 600;
+    color: #6ee1f9;
+    display: flex;
+    align-items: justify;
+}
+nav li a{
+    padding-right: 15px;
+    padding-left: 15px;
+    display:flex;
+    align-items: center;
+}
+
+#navElement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+#navButtons{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    border-top: 1px solid white;    
+}
+#navButtons p{
+    margin:0px;
+}
+/* NAVBAR>>______________________________________________________________ */
+
+/* Slogan<<______________________________________________________________ */
+#slogan{
+    height: 90vh;
+    font-size: 1.7em;
+    letter-spacing: 0.15em;
+    text-align: center;
+    background-image:  linear-gradient(180deg,var(--Col_Grad1),var(--Col_Grad2));
+    padding-bottom: 5vw;
+    width: 100%;
+}
+#slogan span{
+    line-height: 90%;
+    display:block;
+    margin: 40px,0px;
+}
+#slogan span:first-child{
+    text-shadow:3px 3px 4px var(--Col_Shadow);
+}
+#slogan span:last-child{line-height: 90%;
+    display:block;
+    margin: 40px,0px;
+    mix-blend-mode: scree;
+    color: rgb(255, 255, 255);
+    background-color:rgb(0, 154, 168);
+    border-radius: 70px 5px;
+}
+/* Slogan>>______________________________________________________________ */
+
+/* Fleche<<______________________________________________________________ */
+.flecheContain{
+    text-align: center;
+    position: relative;
+    top: -10vw;
+}
+.fleche:nth-child(2){
+    position: relative;
+    top: -1.5vw;
+}
+.fleche img{
+    width: 100%;
+}
+/* Fleche>>______________________________________________________________ */
+
+#logoLarge{
+    padding: 0px 20px;
+    padding-top: 10vw;
+    padding-bottom: 3vw;
+}
+main{
+        text-align: center;
+        position: relative;
+        top: -10vw;
+}
+
+
+
+#blocTitle{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    box-shadow: 0px 2px 6px var(--Col_Shadow);
+    margin-top: 8vw;
+    background-color: var(--Col_Main);
+    /* background-image:  linear-gradient(180deg,var(--Col_Grad1),var(--Col_Grad2)); */
+
+}
+h1{
+    font-size: 1.8em;
+    color: white;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+    
+}
+
+h2{
+    font-family: 'Baloo Paaji 2', cursive;
+    font-weight: 400;
+    font-size: 1.9em;
+    color: rgb(6, 96, 115);
+    letter-spacing: 0.05em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(6, 96, 115);
+    
+}
+
+.sec{
+    background-color: rgba(255, 255, 255,0.85);
+    padding:10px 30px;
+    border-radius: 0px 60px;
+    margin-top: 8vw;
+    box-shadow: 3px 3px 10px rgba(10, 99, 117,0.25);
+}
+
+p strong{
+    font-weight: 900;
+}
+
+footer p{
+    font-size: 0.8em;
+}
+.buttonTXT{
+    margin:0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: none;
+}
+[href]{
+    color: #6ee1f9;
+    text-decoration: none;
+    font-weight: 600;
+}
+.actu [href]{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: rgb(0, 87, 87);
+    padding:6px;
+    border-radius: 8px;
+}
+.actu [href]:hover{
+    color: #6ee1f9;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: rgb(0, 44, 44);
+    padding:6px;
+    border-radius: 8px;
+}
+.actu{
+    text-align: center;
+}
+.actu .post{
+    text-align: center;
+}
+footer{
+    background-color: rgba(0, 44, 44, 0.95);
+    height: 55px;
+    border-top: 2px solid white;
+    margin-top: 20px;
+}
+footer p{
+    text-align: center;
+    padding-top: 18px;
+    margin:0px
+}
+.illu{
+    margin: 5px 15px 5px 0px;
+    width:100%;
+    text-align: center;
+    border-radius: 10%;
+    
+    
+}
+.illu img{
+    margin: 5px 15px 5px 0px;
+    object-fit: contain;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.icon{
+    font-size: 2rem;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#gal{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex: 0 30%;
+}
+
+#secSide{
+    background-color: rgba(10, 99, 117,0.85);
+    padding:10px 30px;
+    border-radius: 5px 40px;
+    margin-top: 30px;
+    box-shadow: 3px 3px 10px rgba(10, 99, 117,0.25);
+    text-align: center;
+}
+.galerie{
+    flex: 0 100%;
+}
+aside{
+    flex: 0 100%;
+}
+aside img{
+    object-fit: contain;
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+}
+
+.illuGal{
+    text-align: center;
+    flex: 0 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.illuGal img{
+    object-fit: contain;
+    width: 100%;
+    /* max-width: 400px; */
+    height: 100%;
+    border-radius: 10px;
+
+}
+#boxGalSide{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+/* RESPONSIVE<<_________________________________________________________ */
+/* small<<______________________________ */
+@media (min-width:650px){
+    .illuGal{
+        text-align: center;
+        flex: 0 49%;  
+    }
+
+}
+/* medium<<______________________________ */
+@media (min-width:900px){
+    #navButtons{
+        justify-content: space-between;
+    }
+    .buttonTXT{
+        display: inline;
+    }
+    .icon{
+        font-size: 1rem;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    #slogan{
+        font-size: 2rem;
+    }
+    .container{
+        width: 85%;
+        max-width: 1200px;
+    }
+    .illu{
+        float: left;
+        margin: 5px 15px 5px 0px;
+        width:400px;
+        text-align: center;
+        height: 100%;
+        
+        
+    }
+    .illu img{
+        float: left;
+        margin: 5px 15px 5px 0px;
+        object-fit: contain;
+        width: 400px;
+        max-width: 400px;
+        height: 100%;
+    
+    }
+    .galerie{
+        flex: 0 65%;
+    }
+    aside{
+        flex: 0 25%;
+        align-self: center;
+    }
+}
+/* large<<______________________________ */
+@media (min-width:1190px){
+    #navButtons{
+        justify-content: space-between;
+    }
+    #logo{
+        flex: 0 15%;
+        padding-right: 25px;
+        text-align: left;
+    }
+    #logo img{
+        width:172px;
+        height: 54px;
+    }
+    nav{
+        flex: 0 80%;
+    }
+    #slogan{
+        font-size: 2.5rem;
+    }
+    #navButtons{
+        border-top: none;
+    }
+    .container{
+        width: 80%;
+        max-width: 1200px;
+    }
+}/* RESPONSIVE>>_________________________________________________________ */
