@@ -383,8 +383,6 @@ h2{
 .postillu{
     flex: 0 40%;
 }
-.postillu>div{
-}
 .postillu>div img{
     box-sizing: border-box;
     padding: 30px 5vw;
