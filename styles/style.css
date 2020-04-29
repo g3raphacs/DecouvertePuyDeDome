@@ -313,9 +313,6 @@ main{
 .colorLine>div:nth-child(4){
     background-color: var(--Col_SecLight);
 }
-.colorLine-small{
-    height: 10px;
-}
 
 
 h1{
@@ -352,7 +349,8 @@ h2{
     height: 100%;
     background-color: var(--Col_Main);
     border-left: 20px solid var(--Col_Comp);
-    width: 100px;
+    width: 5vw;
+    max-width: 100px;
     margin-right: 20px;
 }
 .secTopBar h2{
@@ -379,6 +377,14 @@ h2{
 }
 .post>div{
     padding: 30px 5vw;
+}
+.post p:first-child::first-letter{
+    display: inline-block;
+    font-size: 4rem;
+    float: left;
+    font-weight: bold;
+    color: var(--Col_Comp);
+    margin-right: 15px;
 }
 .postillu{
     flex: 0 40%;
