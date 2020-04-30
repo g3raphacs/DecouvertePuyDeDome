@@ -70,17 +70,25 @@
     --Col_Shadow   : rgba(0, 0, 0, 0.5);
 }
 /* classes text */
+.TXTmain{color: var(--Col_Main);}
+.TXTcomp{color: var(--Col_Comp);}
+.TXTsec{color: var(--Col_Sec);}
+.TXTseclight{color: var(--Col_SecLight);}
 .TXTdark{color: var(--Col_Black);}
 .TXTmed{color: var(--Col_Gray);}
 .TXTmainlight{color: var(--Col_MainLight);}
-.TXTcomp{color: var(--Col_Comp);}
 .TXTwhite{color:white;}
 
 /* classes background */
-.BCKPrimary{background-color: var(--Col_Main);}
+.BCKwhiteA{background-color: var(--Col_White_a95);}
+.BCKmain{background-color: var(--Col_Main);}
+.BCKsec{background-color: var(--Col_Sec);}
+.BCKseclight{background-color: var(--Col_SecLight);}
+.BCKcomp{background-color: var(--Col_Comp);}
 .BCKDark{background-color: var(--Col_Black);}
 /* shadows */
 .shadow{box-shadow: 0px 2px 6px var(--Col_Shadow);}
+.txtshadow{text-shadow: 3px 3px 4px var(--Col_Shadow);}
 
 /*COLOR VALUES>>____________________________________________________________________________________*/
 
@@ -247,9 +255,6 @@ nav li a{
     line-height: 90%;
     display    : block;
     margin     : 40px, 0px;
-}
-#slogan span:first-child{
-    text-shadow: 3px 3px 4px var(--Col_Shadow);
 }
 #slogan span:last-child{line-height: 90%;
     display         : block;
