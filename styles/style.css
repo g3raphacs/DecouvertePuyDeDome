@@ -334,6 +334,25 @@ h2{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+/* IMAGES>>______________________________________________________________ */
+.cover1{background-image: url("/Images/accueil/fullsize/meteo.jpg");}
+.img-cover{
+    background-position: center;
+    background-size: cover;
+    align-self: stretch;
+}
+.cover-link{
+    filter: grayscale(1);
+    opacity: 0.4;
+}
+.cover-link:hover{
+    filter: none;
+    opacity: 1;
+}
+.img-cover a{
+    display: block;
+    height:100%
+}
 
 /* SECTIONS>>______________________________________________________________ */
 .secTopBar{
@@ -341,7 +360,7 @@ h2{
     text-align: left;
     display: flex;
     align-items: center;
-    border-radius: 0px 60px 0px 0px;
+    border-radius: 0px 30px 0px 0px;
     background-color: var(--Col_Black);
     border-right: 15px solid var(--Col_Comp);
 }
@@ -365,7 +384,7 @@ h2{
 }
 .sec{
     margin-top: 8vw;
-    border-radius: 0px 60px 0px 60px;
+    border-radius: 0px 30px 0px 0px;
     box-shadow: 3px 3px 10px rgba(10, 99, 117,0.25);
 
 }
