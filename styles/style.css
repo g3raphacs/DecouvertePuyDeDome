@@ -2,22 +2,22 @@
 /* Font Icons<<______________________________________________________________ */
 @font-face {
     font-family: 'Glyphter';
-    src: url('../fonts/Glyphter.eot');
-    src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Glyphter.woff') format('woff'),
-         url('../fonts/Glyphter.ttf') format('truetype'),
-         url('../fonts/Glyphter.svg#Glyphter') format('svg');
+    src : url('../fonts/Glyphter.eot');
+    src : url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Glyphter.woff') format('woff'),
+          url('../fonts/Glyphter.ttf') format('truetype'),
+          url('../fonts/Glyphter.svg#Glyphter') format('svg');
     font-weight: normal;
-    font-style: normal;
+    font-style : normal;
 }
 [class*='icon-']:before{
-	display: inline-block;
-   font-family: 'Glyphter';
-   font-style: normal;
-   font-weight: normal;
-   line-height: 1;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale
+	display                : inline-block;
+	font-family            : 'Glyphter';
+	font-style             : normal;
+	font-weight            : normal;
+	line-height            : 1;
+	-webkit-font-smoothing : antialiased;
+	-moz-osx-font-smoothing: grayscale
 }
 .icon-foires:before{content:'\0041';}
 .icon-Accueil:before{content:'\0042';}
@@ -55,29 +55,27 @@
 /*FONTS>>____________________________________________________________________________________*/
 
 /*COLOR VALUES<<____________________________________________________________________________________*/
+/* @colors */
 :root{
     --Col_MainLight: #98efff;
-    --Col_Main: #009aa8;
-    --Col_Comp: #fd8a76;
-    --Col_Sec: #514621;
-    --Col_SecLight: #aaa246;
-    --Col_Grad1: rgba(0, 255, 255, 0.445);
-    --Col_Grad2: #B1F3EB;
-    --Col_Gray:  #4B504D;
-    --Col_Black: #0d110d;
+    --Col_Main     : #009aa8;
+    --Col_Comp     : #fd8a76;
+    --Col_Sec      : #eabe2b;
+    --Col_SecLight : #9bcc15;
+    --Col_Grad1    : rgba(0, 255, 255, 0.445);
+    --Col_Grad2    : #B1F3EB;
+    --Col_Gray     : #4B504D;
+    --Col_Black    : #0d110d;
     --Col_White_a95: rgba(255, 255, 255, 0.95);
-    --Col_Shadow: rgba(0, 0, 0, 0.5);
+    --Col_Shadow   : rgba(0, 0, 0, 0.5);
 }
 /* classes text */
 .TXTdark{color: var(--Col_Black);}
 .TXTmed{color: var(--Col_Gray);}
 .TXTmainlight{color: var(--Col_MainLight);}
-.TXTmaindark{color: var(--Col_MainDark);}
-.TXThighlight{color: var(--Col_Highlight);}
 .TXTcomp{color: var(--Col_Comp);}
 .TXTwhite{color:white;}
-.TXTdarkblue{color: var(--Col_BlueDark);}
-.TXTblue{color: var(--Col_BlueNormal);}
+
 /* classes background */
 .BCKPrimary{background-color: var(--Col_Main);}
 .BCKDark{background-color: var(--Col_Black);}
@@ -87,35 +85,34 @@
 /*COLOR VALUES>>____________________________________________________________________________________*/
 
 .flexCenterCenter{
-    display: flex;
-    align-items: center;
+    display        : flex;
+    align-items    : center;
     justify-content: center;
 }
 /* Generic<<______________________________________________________________ */
 
 body{
-    font-size: 16px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
-    background-image: url("/Images/back.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    font-size            : 16px;
+    font-family          : 'Quicksand', sans-serif;
+    font-weight          : 400;
+    background-image     : url("/Images/back.jpg");
+    background-repeat    : no-repeat;
+    background-size      : cover;
     background-attachment: fixed;
-    padding: 0px;
-    margin:0px;
-    height: 100%;
-    line-height:1.5rem;
-    letter-spacing: 0.05rem;
-    color: var(--Col_Gray);
+    padding              : 0px;
+    margin               : 0px;
+    height               : 100%;
+    line-height          : 1.5rem;
+    letter-spacing       : 0.05rem;
+    color                : var(--Col_Gray);
 }/* Generic>>______________________________________________________________ */
 
 /* Containers<<______________________________________________________________ */
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-left: 20px;
+    max-width    : 1200px;
+    margin       : 0 auto;
+    padding-left : 20px;
     padding-right: 20px;
-   
 }/* Containers>>______________________________________________________________ */
 
 /* Box Model<<______________________________________________________________ */
@@ -129,18 +126,18 @@ body{
 .rotRight{transform: rotate(3deg);}
 /* NAVBAR<<______________________________________________________________ */
 #navbar{
-    width: 100%;
-    position: fixed;
-    position: top;
-    z-index: 2;
+    width           : 100%;
+    position        : fixed;
+    position        : top;
+    z-index         : 2;
     background-color: var(--Col_Black);
     /* margin-top: 30px; */
 }
 /* nav buttons */
 #navbar [href]{
-    color: rgb(255, 255, 255);
+    color          : rgb(255, 255, 255);
     text-decoration: none;
-    font-weight: 400;
+    font-weight    : 400;
 }
 #navButtons a.current{
     font-weight: 600;
@@ -159,121 +156,120 @@ body{
 }
 
 #navButtons> li:nth-child(1) a.current{
-    border-bottom: 5px solid var(--Col_Main);
+    border-bottom   : 5px solid var(--Col_Main);
     background-color: rgb(0, 0, 0);
-    padding-top: 5px;
+    padding-top     : 5px;
 }
 #navButtons> li:nth-child(2) a.current{
-    border-bottom: 5px solid var(--Col_Sec);
+    border-bottom   : 5px solid var(--Col_Sec);
     background-color: rgb(0, 0, 0);
-    padding-top: 5px;
+    padding-top     : 5px;
 }
 #navButtons> li:nth-child(3) a.current{
-    border-bottom: 5px solid var(--Col_Comp);
+    border-bottom   : 5px solid var(--Col_Comp);
     background-color: rgb(0, 0, 0);
-    padding-top: 5px;
+    padding-top     : 5px;
 }
 #navButtons> li:nth-child(4) a.current{
-    border-bottom: 5px solid var(--Col_SecLight);
+    border-bottom   : 5px solid var(--Col_SecLight);
     background-color: rgb(0, 0, 0);
-    padding-top: 5px;
+    padding-top     : 5px;
 }
 
 #navbar ul{padding:0px;}
 
 #logo{
-    flex: 0 100%;
-    text-align: center;
-    display: flex;
+    flex           : 0 100%;
+    text-align     : center;
+    display        : flex;
     justify-content: center;
-    padding: 10px 0px;
+    padding        : 10px 0px;
 }
 #logo img{
-    display: box;
+    display   : box;
     object-fit: contain;
-    width: 90%;
-    height: 110px;
+    width     : 90%;
+    height    : 110px;
 }
 nav{
-    display: flex;
+    display    : flex;
     align-items: stretch;
-    flex: 0 100%;
+    flex       : 0 100%;
 }
 nav li{
-    list-style: none;
-    line-height:2em;
+    list-style : none;
+    line-height: 2em;
     font-weight: 600;
-    color: #6ee1f9;
-    display: flex;
+    color      : #6ee1f9;
+    display    : flex;
     align-items: justify;
 }
 nav li a{
     padding-right: 15px;
-    padding-left: 15px;
-    display:flex;
-    align-items: center;
+    padding-left : 15px;
+    display      : flex;
+    align-items  : center;
 }
 
 #navElement{
-    display: flex;
-    align-items: center;
+    display        : flex;
+    align-items    : center;
     justify-content: center;
-    flex-wrap: wrap;
-    align-items: stretch;
+    flex-wrap      : wrap;
+    align-items    : stretch;
 }
 #navButtons{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    margin: 0em;
-    flex-wrap: wrap;
+    display        : flex;
+    align-items    : center;
+    width          : 100%;
+    margin         : 0em;
+    flex-wrap      : wrap;
     justify-content: space-around;
-    align-items: stretch;
-    border-top: 1px solid white;    
+    align-items    : stretch;
+    border-top     : 1px solid white;
 }
 #navButtons p{
-    margin:0px;
+    margin: 0px;
 }
 /* NAVBAR>>______________________________________________________________ */
 
 /* Slogan<<______________________________________________________________ */
 #slogan{
-    height: 90vh;
-    font-size: 1.7em;
-    letter-spacing: 0.15em;
-    text-align: center;
-    background-image:  linear-gradient(180deg,var(--Col_Grad1),var(--Col_Grad2));
-    padding-bottom: 5vw;
-    width: 100%;
+    height          : 90vh;
+    font-size       : 1.7em;
+    letter-spacing  : 0.15em;
+    text-align      : center;
+    background-image: linear-gradient(180deg,var(--Col_Grad1),var(--Col_Grad2));
+    padding-bottom  : 5vw;
+    width           : 100%;
 }
 #slogan span{
     line-height: 90%;
-    display:block;
-    margin: 40px,0px;
+    display    : block;
+    margin     : 40px, 0px;
 }
 #slogan span:first-child{
-    text-shadow:3px 3px 4px var(--Col_Shadow);
+    text-shadow: 3px 3px 4px var(--Col_Shadow);
 }
 #slogan span:last-child{line-height: 90%;
-    display:block;
-    margin: 40px,0px;
-    mix-blend-mode: scree;
-    color: rgb(255, 255, 255);
-    background-color:rgb(0, 154, 168);
-    border-radius: 70px 5px;
-    box-shadow:3px 3px 20px rgba(0, 0, 0, 0.164);
+    display         : block;
+    margin          : 40px, 0px;
+    color           : rgb(255, 255, 255);
+    background-color: var(--Col_Main);
+    border-radius   : 70px 5px;
+    box-shadow      : 3px 3px 20px rgba(0, 0, 0, 0.164);
 }
 /* Slogan>>______________________________________________________________ */
 
 /* Fleche<<______________________________________________________________ */
 .flecheContain{
     text-align: center;
-    position: relative;
-    top: -10vw;
+    position  : relative;
+    top       : -10vw;
 }
 .fleche:nth-child(2){
     position: relative;
-    top: -1.5vw;
+    top     : -1.5vw;
 }
 .fleche img{
     width: 100%;
@@ -282,127 +278,118 @@ nav li a{
 
 main{
         text-align: center;
-        position: relative;
-        top: 18vw;
+        position  : relative;
+        top       : 18vw;
 }
 /* TITLES>>______________________________________________________________ */
 #blocTitle{
-    margin-bottom: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    box-shadow: 0px 2px 6px var(--Col_Shadow);
-    margin-top: 8vw;
+    margin-bottom   : 0px;
+    padding-top     : 1px;
+    padding-bottom  : 1px;
+    box-shadow      : 0px 2px 6px var(--Col_Shadow);
+    margin-top      : 8vw;
     background-color: var(--Col_Black);
 }
 .colorLine{
-    height: 5vw;
+    height : 5vw;
     display: flex;
 }
 .colorLine>div{
     width: 25%;
 }
-.colorLine>div:nth-child(1){
-    background-color: var(--Col_Main);
-}
-.colorLine>div:nth-child(2){
-    background-color: var(--Col_Sec);
-}
-.colorLine>div:nth-child(3){
-    background-color: var(--Col_Comp);
-}
-.colorLine>div:nth-child(4){
-    background-color: var(--Col_SecLight);
-}
+.colorLine>div:nth-child(1){background-color: var(--Col_Main);}
+.colorLine>div:nth-child(2){background-color: var(--Col_Sec);}
+.colorLine>div:nth-child(3){background-color: var(--Col_Comp);}
+.colorLine>div:nth-child(4){background-color: var(--Col_SecLight);}
 
 
 h1{
-    font-size: 1.8em;
-    color: white;
+    font-size     : 1.8em;
+    color         : white;
     letter-spacing: 0.1em;
-    text-align: center;
-    font-weight: 500;
-    padding-top: 8vw;
+    text-align    : center;
+    font-weight   : 500;
+    padding-top   : 8vw;
     padding-bottom: 8vw;
 }
 
 h2{
-    font-family: 'Baloo Paaji 2', cursive;
-    font-weight: 400;
-    font-size: 1.4em;
-    color: rgb(6, 96, 115);
+    font-family   : 'Baloo Paaji 2', cursive;
+    font-weight   : 400;
+    font-size     : 1.4em;
+    color         : rgb(6, 96, 115);
     letter-spacing: 0.05em;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top    : 10px;
+    margin-bottom : 10px;
 }
 /* IMAGES>>______________________________________________________________ */
 .cover1{background-image: url("/Images/accueil/fullsize/meteo.jpg");}
 .img-cover{
     background-position: center;
-    background-size: cover;
-    align-self: stretch;
+    background-size    : cover;
+    align-self         : stretch;
 }
 .cover-link{
-    filter: grayscale(1);
-    opacity: 0.4;
+    filter : grayscale(1);
+    opacity: 0.8;
 }
 .cover-link:hover{
-    filter: none;
+    filter : none;
     opacity: 1;
 }
 .img-cover a{
     display: block;
-    height:100%
+    height : 100%
 }
 
 /* SECTIONS>>______________________________________________________________ */
 .secTopBar{
-    height: 100px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    border-radius: 0px 30px 0px 0px;
+    height          : 100px;
+    text-align      : left;
+    display         : flex;
+    align-items     : center;
+    border-radius   : 0px 30px 0px 0px;
     background-color: var(--Col_Black);
-    border-right: 15px solid var(--Col_Comp);
+    border-right    : 15px solid var(--Col_Comp);
 }
 .secTopBarR{
-    height: 100%;
+    height          : 100%;
     background-color: var(--Col_Main);
-    border-left: 20px solid var(--Col_Comp);
-    width: 5vw;
-    max-width: 100px;
-    margin-right: 20px;
+    border-left     : 20px solid var(--Col_Comp);
+    width           : 5vw;
+    max-width       : 100px;
+    margin-right    : 20px;
 }
 .secTopBar h2{
     color: white;
 }
 .secPost{
     background-color: rgba(255, 255, 255,0.85);
-    border-radius: 0px 0px 0px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border-radius   : 0px 0px 0px 60px;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
 }
 .sec{
-    margin-top: 8vw;
+    margin-top   : 8vw;
     border-radius: 0px 30px 0px 0px;
-    box-shadow: 3px 3px 10px rgba(10, 99, 117,0.25);
+    box-shadow   : 3px 3px 10px rgba(10, 99, 117,0.25);
 
 }
 .post{
     background-color: var(--Col_Main);
-    border-right: 15px solid var(--Col_Comp);
-    flex: 0 60%;
-    
+    border-right    : 15px solid var(--Col_Comp);
+    flex            : 0 60%;
 }
 .post>div{
     padding: 30px 5vw;
 }
 .post p:first-child::first-letter{
-    display: block;
-    font-size: 4rem;
-    float: left;
-    font-weight: bold;
-    color: var(--Col_Comp);
+    display     : block;
+    font-size   : 4rem;
+    float       : left;
+    font-weight : bold;
+    color       : var(--Col_Comp);
     margin-right: 15px;
 }
 .postillu{
@@ -410,11 +397,11 @@ h2{
 }
 .postillu>div img{
     box-sizing: border-box;
-    padding: 30px 5vw;
-    display: box;
+    padding   : 30px 5vw;
+    display   : box;
     object-fit: contain;
-    width: 100%;
-    height: 100%;
+    width     : 100%;
+    height    : 100%;
 }
 
 p strong{
@@ -425,31 +412,31 @@ footer p{
     font-size: 0.8em;
 }
 .buttonTXT{
-    margin:0px;
-    padding-left: 10px;
+    margin       : 0px;
+    padding-left : 10px;
     padding-right: 10px;
-    display: none;
+    display      : none;
 }
 [href]{
-    color: #6ee1f9;
+    color          : #6ee1f9;
     text-decoration: none;
-    font-weight: 600;
+    font-weight    : 600;
 }
 .actu [href]{
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
+    color           : white;
+    text-decoration : none;
+    font-weight     : 600;
     background-color: rgb(0, 87, 87);
-    padding:6px;
-    border-radius: 8px;
+    padding         : 6px;
+    border-radius   : 8px;
 }
 .actu [href]:hover{
-    color: #6ee1f9;
-    text-decoration: none;
-    font-weight: 600;
+    color           : #6ee1f9;
+    text-decoration : none;
+    font-weight     : 600;
     background-color: rgb(0, 44, 44);
-    padding:6px;
-    border-radius: 8px;
+    padding         : 6px;
+    border-radius   : 8px;
 }
 .actu{
     text-align: center;
@@ -459,54 +446,48 @@ footer p{
 }
 footer{
     background-color: rgba(0, 44, 44, 0.95);
-    height: 55px;
-    border-top: 2px solid white;
-    margin-top: 20px;
+    height          : 55px;
+    border-top      : 2px solid white;
+    margin-top      : 20px;
 }
 footer p{
-    text-align: center;
+    text-align : center;
     padding-top: 18px;
-    margin:0px
+    margin     : 0px
 }
 .illu{
-    margin: 5px 15px 5px 0px;
-    width:100%;
-    text-align: center;
+    margin       : 5px 15px 5px 0px;
+    width        : 100%;
+    text-align   : center;
     border-radius: 10%;
-    
-    
 }
 .illu img{
-    margin: 5px 15px 5px 0px;
-    object-fit: contain;
-    width: 100%;
-    max-width: 450px;
-    height: 100%;
+    margin       : 5px 15px 5px 0px;
+    object-fit   : contain;
+    width        : 100%;
+    max-width    : 450px;
+    height       : 100%;
     border-radius: 10px;
-
 }
-
 .icon{
-    font-size: 2rem;
+    font-size     : 2rem;
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top   : 10px;
 }
 #gal{
-
-    display: flex;
-    flex-flow: row wrap;
+    display        : flex;
+    flex-flow      : row wrap;
     justify-content: space-between;
-    align-content: flex-start;
-    flex: 0 30%;
+    align-content  : flex-start;
+    flex           : 0 30%;
 }
-
 #secSide{
     background-color: rgba(10, 99, 117,0.85);
-    padding:10px 30px;
-    border-radius: 5px 40px;
-    margin-top: 30px;
-    box-shadow: 3px 3px 10px rgba(10, 99, 117,0.25);
-    text-align: center;
+    padding         : 10px 30px;
+    border-radius   : 5px 40px;
+    margin-top      : 30px;
+    box-shadow      : 3px 3px 10px rgba(10, 99, 117,0.25);
+    text-align      : center;
 }
 .galerie{
     flex: 0 100%;
@@ -516,30 +497,28 @@ aside{
 }
 aside img{
     object-fit: contain;
-    width: 100%;
-    max-width: 200px;
-    height: 100%;
+    width     : 100%;
+    max-width : 200px;
+    height    : 100%;
 }
-
 .illuGal{
-    text-align: center;
-    flex: 0 100%;
-    margin-top: 5px;
+    text-align   : center;
+    flex         : 0 100%;
+    margin-top   : 5px;
     margin-bottom: 5px;
 }
 .illuGal img{
     object-fit: contain;
-    width: 100%;
+    width     : 100%;
     /* max-width: 400px; */
-    height: 100%;
+    height       : 100%;
     border-radius: 10px;
-
 }
 #boxGalSide{
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: stretch;
+    flex-wrap      : wrap;
+    align-items    : stretch;
 }
 
 /* RESPONSIVE<<_________________________________________________________ */
@@ -556,15 +535,15 @@ aside img{
         display: inline;
     }
     .icon{
-        font-size: 1rem;
+        font-size     : 1rem;
         padding-bottom: 0px;
-        padding-top: 0px;
+        padding-top   : 0px;
     }
     #slogan{
         font-size: 2rem;
     }
     .container{
-        width: 85%;
+        width    : 85%;
         max-width: 1200px;
     }
 
@@ -575,12 +554,12 @@ aside img{
         justify-content: space-between;
     }
     #logo{
-        flex: 0 15%;
+        flex         : 0 15%;
         padding-right: 25px;
-        text-align: left;
+        text-align   : left;
     }
     #logo img{
-        width:172px;
+        width : 172px;
         height: 54px;
     }
     nav{
@@ -593,7 +572,8 @@ aside img{
         border-top: none;
     }
     .container{
-        width: 80%;
+        width    : 80%;
         max-width: 1200px;
     }
 }/* RESPONSIVE>>_________________________________________________________ */
+
