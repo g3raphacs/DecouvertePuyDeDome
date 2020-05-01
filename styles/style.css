@@ -67,7 +67,7 @@
     --Col_Gray     : #4B504D;
     --Col_Black    : #0d110d;
     --Col_White_a95: rgba(255, 255, 255, 0.95);
-    --Col_Shadow   : rgba(0, 0, 0, 0.5);
+    --Col_Shadow   : rgba(10, 99, 117, 0.5);
 }
 /* classes text */
 .TXTmain{color: var(--Col_Main);}
@@ -86,19 +86,40 @@
 .BCKseclight{background-color: var(--Col_SecLight);}
 .BCKcomp{background-color: var(--Col_Comp);}
 .BCKDark{background-color: var(--Col_Black);}
-/* shadows */
-.shadow{box-shadow: 0px 2px 6px var(--Col_Shadow);}
-.txtshadow{text-shadow: 3px 3px 4px var(--Col_Shadow);}
 
+/* gradients */
+.BCKgradBlue{background-image: linear-gradient(180deg,var(--Col_Grad1),var(--Col_Grad2));}
+/* shadows */
+.shadow{box-shadow          : 0px 2px 6px var(--Col_Shadow);}
+.shadowLarge{box-shadow     : 3px 3px 20px rgba(10, 99, 117, 0.164);}
+.shadowPost{box-shadow      : 3px 3px 10px rgba(10, 99, 117,0.25);}
+.txtshadow{text-shadow      : 3px 3px 4px var(--Col_Shadow);}
+
+/* borders */
+.borderPostR{border-right   : 15px solid var(--Col_Comp);}
+.borderPostL{border-left   : 15px solid var(--Col_Comp);}
+
+/* lettrines */
+.lettrine::first-letter{
+    display     : block;
+    font-size   : 4rem;
+    float       : left;
+    font-weight : bold;
+    color       : var(--Col_Comp);
+    margin-right: 15px;
+}
 /*COLOR VALUES>>____________________________________________________________________________________*/
 
+/*FLEX<<____________________________________________________________________________________*/
 .flexCenterCenter{
     display        : flex;
     align-items    : center;
     justify-content: center;
 }
-/* Generic<<______________________________________________________________ */
 
+/*FLEX>>____________________________________________________________________________________*/
+
+/* Generic<<______________________________________________________________ */
 body{
     font-size            : 16px;
     font-family          : 'Quicksand', sans-serif;
@@ -113,7 +134,14 @@ body{
     line-height          : 1.5rem;
     letter-spacing       : 0.05rem;
     color                : var(--Col_Gray);
-}/* Generic>>______________________________________________________________ */
+}
+p strong{
+    font-weight: 900;
+}
+[href]{
+    text-decoration: none;
+}
+/* Generic>>______________________________________________________________ */
 
 /* Containers<<______________________________________________________________ */
 .container{
@@ -139,7 +167,6 @@ body{
     position        : top;
     z-index         : 2;
     background-color: var(--Col_Black);
-    /* margin-top: 30px; */
 }
 /* nav buttons */
 #navbar [href]{
@@ -147,21 +174,15 @@ body{
     text-decoration: none;
     font-weight    : 400;
 }
-#navButtons a.current{
-    font-weight: 600;
-}
-#navButtons> li:nth-child(1) a:hover{
-    background-color: var(--Col_Main);
-}
-#navButtons> li:nth-child(2) a:hover{
-    background-color: var(--Col_Sec);
-}
-#navButtons> li:nth-child(3) a:hover{
-    background-color: var(--Col_Comp);
-}
-#navButtons> li:nth-child(4) a:hover{
-    background-color: var(--Col_SecLight);
-}
+#navButtons a.current{font-weight: 600;}
+
+#navButtons> li:nth-child(1) a:hover{background-color: var(--Col_Main);}
+
+#navButtons> li:nth-child(2) a:hover{background-color: var(--Col_Sec);}
+
+#navButtons> li:nth-child(3) a:hover{background-color: var(--Col_Comp);}
+
+#navButtons> li:nth-child(4) a:hover{background-color: var(--Col_SecLight);}
 
 #navButtons> li:nth-child(1) a.current{
     border-bottom   : 5px solid var(--Col_Main);
@@ -208,7 +229,6 @@ nav li{
     list-style : none;
     line-height: 2em;
     font-weight: 600;
-    color      : #6ee1f9;
     display    : flex;
     align-items: justify;
 }
@@ -218,7 +238,6 @@ nav li a{
     display      : flex;
     align-items  : center;
 }
-
 #navElement{
     display        : flex;
     align-items    : center;
@@ -239,6 +258,12 @@ nav li a{
 #navButtons p{
     margin: 0px;
 }
+.icon{
+    font-size     : 2rem;
+    padding-bottom: 10px;
+    padding-top   : 10px;
+}
+.buttonTXT{display: none;}
 /* NAVBAR>>______________________________________________________________ */
 
 /* Slogan<<______________________________________________________________ */
@@ -247,7 +272,6 @@ nav li a{
     font-size       : 1.7em;
     letter-spacing  : 0.15em;
     text-align      : center;
-    background-image: linear-gradient(180deg,var(--Col_Grad1),var(--Col_Grad2));
     padding-bottom  : 5vw;
     width           : 100%;
 }
@@ -259,10 +283,7 @@ nav li a{
 #slogan span:last-child{line-height: 90%;
     display         : block;
     margin          : 40px, 0px;
-    color           : rgb(255, 255, 255);
-    background-color: var(--Col_Main);
     border-radius   : 70px 5px;
-    box-shadow      : 3px 3px 20px rgba(0, 0, 0, 0.164);
 }
 /* Slogan>>______________________________________________________________ */
 
@@ -291,7 +312,6 @@ main{
     margin-bottom   : 0px;
     padding-top     : 1px;
     padding-bottom  : 1px;
-    box-shadow      : 0px 2px 6px var(--Col_Shadow);
     margin-top      : 8vw;
     background-color: var(--Col_Black);
 }
@@ -302,15 +322,9 @@ main{
 .colorLine>div{
     width: 25%;
 }
-.colorLine>div:nth-child(1){background-color: var(--Col_Main);}
-.colorLine>div:nth-child(2){background-color: var(--Col_Sec);}
-.colorLine>div:nth-child(3){background-color: var(--Col_Comp);}
-.colorLine>div:nth-child(4){background-color: var(--Col_SecLight);}
-
 
 h1{
     font-size     : 1.8em;
-    color         : white;
     letter-spacing: 0.1em;
     text-align    : center;
     font-weight   : 500;
@@ -322,7 +336,6 @@ h2{
     font-family   : 'Baloo Paaji 2', cursive;
     font-weight   : 400;
     font-size     : 1.4em;
-    color         : rgb(6, 96, 115);
     letter-spacing: 0.05em;
     margin-top    : 10px;
     margin-bottom : 10px;
@@ -355,21 +368,14 @@ h2{
     align-items     : center;
     border-radius   : 0px 30px 0px 0px;
     background-color: var(--Col_Black);
-    border-right    : 15px solid var(--Col_Comp);
 }
 .secTopBarR{
     height          : 100%;
-    background-color: var(--Col_Main);
-    border-left     : 20px solid var(--Col_Comp);
     width           : 5vw;
     max-width       : 100px;
     margin-right    : 20px;
 }
-.secTopBar h2{
-    color: white;
-}
 .secPost{
-    background-color: rgba(255, 255, 255,0.85);
     border-radius   : 0px 0px 0px 60px;
     display         : flex;
     justify-content : space-between;
@@ -378,24 +384,12 @@ h2{
 .sec{
     margin-top   : 8vw;
     border-radius: 0px 30px 0px 0px;
-    box-shadow   : 3px 3px 10px rgba(10, 99, 117,0.25);
-
 }
 .post{
-    background-color: var(--Col_Main);
-    border-right    : 15px solid var(--Col_Comp);
     flex            : 0 60%;
 }
 .post>div{
     padding: 30px 5vw;
-}
-.post p:first-child::first-letter{
-    display     : block;
-    font-size   : 4rem;
-    float       : left;
-    font-weight : bold;
-    color       : var(--Col_Comp);
-    margin-right: 15px;
 }
 .postillu{
     flex: 0 40%;
@@ -407,123 +401,6 @@ h2{
     object-fit: contain;
     width     : 100%;
     height    : 100%;
-}
-
-p strong{
-    font-weight: 900;
-}
-
-footer p{
-    font-size: 0.8em;
-}
-.buttonTXT{
-    margin       : 0px;
-    padding-left : 10px;
-    padding-right: 10px;
-    display      : none;
-}
-[href]{
-    color          : #6ee1f9;
-    text-decoration: none;
-    font-weight    : 600;
-}
-.actu [href]{
-    color           : white;
-    text-decoration : none;
-    font-weight     : 600;
-    background-color: rgb(0, 87, 87);
-    padding         : 6px;
-    border-radius   : 8px;
-}
-.actu [href]:hover{
-    color           : #6ee1f9;
-    text-decoration : none;
-    font-weight     : 600;
-    background-color: rgb(0, 44, 44);
-    padding         : 6px;
-    border-radius   : 8px;
-}
-.actu{
-    text-align: center;
-}
-.actu .post{
-    text-align: center;
-}
-footer{
-    background-color: rgba(0, 44, 44, 0.95);
-    height          : 55px;
-    border-top      : 2px solid white;
-    margin-top      : 20px;
-}
-footer p{
-    text-align : center;
-    padding-top: 18px;
-    margin     : 0px
-}
-.illu{
-    margin       : 5px 15px 5px 0px;
-    width        : 100%;
-    text-align   : center;
-    border-radius: 10%;
-}
-.illu img{
-    margin       : 5px 15px 5px 0px;
-    object-fit   : contain;
-    width        : 100%;
-    max-width    : 450px;
-    height       : 100%;
-    border-radius: 10px;
-}
-.icon{
-    font-size     : 2rem;
-    padding-bottom: 10px;
-    padding-top   : 10px;
-}
-#gal{
-    display        : flex;
-    flex-flow      : row wrap;
-    justify-content: space-between;
-    align-content  : flex-start;
-    flex           : 0 30%;
-}
-#secSide{
-    background-color: rgba(10, 99, 117,0.85);
-    padding         : 10px 30px;
-    border-radius   : 5px 40px;
-    margin-top      : 30px;
-    box-shadow      : 3px 3px 10px rgba(10, 99, 117,0.25);
-    text-align      : center;
-}
-.galerie{
-    flex: 0 100%;
-}
-aside{
-    flex: 0 100%;
-}
-aside img{
-    object-fit: contain;
-    width     : 100%;
-    max-width : 200px;
-    height    : 100%;
-}
-.illuGal{
-    text-align   : center;
-    flex         : 0 100%;
-    margin-top   : 5px;
-    margin-bottom: 5px;
-}
-.illuGal img{
-    object-fit: contain;
-    width     : 100%;
-    /* max-width: 400px; */
-    height       : 100%;
-    border-radius: 10px;
-}
-#boxGalSide{
-    display        : flex;
-    justify-content: space-between;
-    flex-wrap      : wrap;
-    align-items    : stretch;
 }
 
 /* RESPONSIVE<<_________________________________________________________ */
