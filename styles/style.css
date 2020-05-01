@@ -67,7 +67,7 @@
     --Col_Gray     : #4B504D;
     --Col_Black    : #0d110d;
     --Col_White_a95: rgba(255, 255, 255, 0.85);
-    --Col_Shadow   : rgba(10, 99, 117, 0.5);
+    --Col_Shadow   : rgba(0, 0, 0, 0.5);
 }
 /* classes text */
 .TXTmain{color: var(--Col_Main);}
@@ -91,7 +91,7 @@
 .BCKgradBlue{background-image: linear-gradient(180deg,var(--Col_Grad1),var(--Col_Grad2));}
 /* shadows */
 .shadow{box-shadow          : 0px 2px 6px var(--Col_Shadow);}
-.shadowLarge{box-shadow     : 3px 3px 20px rgba(10, 99, 117, 0.164);}
+.shadowLarge{box-shadow     : 3px 3px 20px rgba(0, 0, 0, 0.164);}
 .shadowPost{box-shadow      : 3px 3px 10px rgba(10, 99, 117,0.25);}
 .txtshadow{text-shadow      : 3px 3px 4px var(--Col_Shadow);}
 
@@ -364,6 +364,18 @@ h2{
     height : 100%
 }
 .loopBox{display:flex ; align-items: center;}
+
+/* lieux */
+.lieux1{background-image: url("/Images/lieux/puydedome/PuyLarge.jpg");}
+.lieux2{background-image: url("/Images/lieux/chainedespuys/chaineLarge.jpg");}
+.lieux3{background-image: url("/Images/lieux/cathedrale/CathedraleLarge.jpg");}
+.lieux4{background-image: url("/Images/lieux/vulcania/vulcaniaLarge.jpg");}
+.lieux5{background-image: url("/Images/lieux/lacdeguery/gueryLarge.jpg");}
+.lieux6{background-image: url("/Images/lieux/grottepierre/grotteLarge.jpg");}
+.lieux7{background-image: url("/Images/lieux/superbesse/SuperBesseLarge.jpg");}
+.lieux8{background-image: url("/Images/lieux/gergovie/GergovieLarge.jpg");}
+.lieux9{background-image: url("/Images/lieux/lacPavin/PavinLarge.jpg");}
+.lieux10{background-image: url("/Images/lieux/murol/MurolLarge.jpg");}
 
 /* SECTIONS>>______________________________________________________________ */
 .secTopBar{
