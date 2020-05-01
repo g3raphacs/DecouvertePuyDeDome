@@ -66,7 +66,7 @@
     --Col_Grad2    : #B1F3EB;
     --Col_Gray     : #4B504D;
     --Col_Black    : #0d110d;
-    --Col_White_a95: rgba(255, 255, 255, 0.95);
+    --Col_White_a95: rgba(255, 255, 255, 0.85);
     --Col_Shadow   : rgba(10, 99, 117, 0.5);
 }
 /* classes text */
@@ -105,17 +105,21 @@
     font-size   : 4rem;
     float       : left;
     font-weight : bold;
-    color       : var(--Col_Comp);
+    color       : var(--Col_SecLight);
     margin-right: 15px;
+    /* background-color: var(--Col_SecLight);
+    padding: 5px; */
 }
 /*COLOR VALUES>>____________________________________________________________________________________*/
 
 /*FLEX<<____________________________________________________________________________________*/
+.flex{display: flex;}
 .flexCenterCenter{
     display        : flex;
     align-items    : center;
     justify-content: center;
 }
+.flexReverse{flex-direction: row-reverse;}
 
 /*FLEX>>____________________________________________________________________________________*/
 
@@ -160,6 +164,7 @@ p strong{
 
 /* transforms */
 .rotRight{transform: rotate(3deg);}
+.rotLeft{transform: rotate(-3deg);}
 /* NAVBAR<<______________________________________________________________ */
 #navbar{
     width           : 100%;
@@ -221,7 +226,6 @@ p strong{
     height    : 110px;
 }
 nav{
-    display    : flex;
     align-items: stretch;
     flex       : 0 100%;
 }
@@ -263,7 +267,7 @@ nav li a{
     padding-bottom: 10px;
     padding-top   : 10px;
 }
-.buttonTXT{display: none;}
+.buttonTXT{display: none;padding-left: 10px}
 /* NAVBAR>>______________________________________________________________ */
 
 /* Slogan<<______________________________________________________________ */
@@ -317,7 +321,6 @@ main{
 }
 .colorLine{
     height : 5vw;
-    display: flex;
 }
 .colorLine>div{
     width: 25%;
@@ -349,7 +352,7 @@ h2{
 }
 .cover-link{
     filter : grayscale(1);
-    opacity: 0.8;
+    opacity: 1;
 }
 .cover-link:hover{
     filter : none;
@@ -357,16 +360,16 @@ h2{
 }
 .img-cover a{
     display: block;
+
     height : 100%
 }
+.loopBox{display:flex ; align-items: center;}
 
 /* SECTIONS>>______________________________________________________________ */
 .secTopBar{
     height          : 100px;
     text-align      : left;
-    display         : flex;
     align-items     : center;
-    border-radius   : 0px 30px 0px 0px;
     background-color: var(--Col_Black);
 }
 .secTopBarR{
@@ -376,14 +379,11 @@ h2{
     margin-right    : 20px;
 }
 .secPost{
-    border-radius   : 0px 0px 0px 60px;
-    display         : flex;
     justify-content : space-between;
     align-items     : center;
 }
 .sec{
     margin-top   : 8vw;
-    border-radius: 0px 30px 0px 0px;
 }
 .post{
     flex            : 0 60%;
@@ -391,8 +391,18 @@ h2{
 .post>div{
     padding: 30px 5vw;
 }
+/* .post strong{background-color: var(--Col_Sec); } */
 .postillu{
     flex: 0 40%;
+}
+.postillu>a{
+    display: block;
+    width: 100%;
+}
+.postillu>a:hover{
+    background-image: url("/Images/loupe.png");
+    background-repeat: no-repeat;
+    background-position: center ;
 }
 .postillu>div img{
     box-sizing: border-box;
