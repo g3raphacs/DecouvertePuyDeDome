@@ -186,6 +186,7 @@ p strong{
     text-decoration: none;
     font-weight    : 400;
 }
+.navButtons{min-height:60px;}
 .navButtons a.current{font-weight: 600;}
 
 .navButtons> li:nth-child(1) a:hover{background-color: var(--Col_Main);}
