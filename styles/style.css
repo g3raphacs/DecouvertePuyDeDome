@@ -62,8 +62,8 @@
     --Col_Comp     : #fd8a76;
     --Col_Sec      : #eabe2b;
     --Col_SecLight : #9bcc15;
-    --Col_Grad1    : rgba(0, 255, 255, 0.445);
-    --Col_Grad2    : #B1F3EB;
+    --Col_Grad1    : rgba(0, 255, 255, 0.171);
+    --Col_Grad2    : #a2fff4;
     --Col_Gray     : #4B504D;
     --Col_Black    : #0d110d;
     --Col_White_a95: rgba(255, 255, 255, 0.85);
@@ -88,7 +88,7 @@
 .BCKDark{background-color: var(--Col_Black);}
 
 /* gradients */
-.BCKgradBlue{background-image: linear-gradient(180deg,var(--Col_Grad1),var(--Col_Grad2));}
+.BCKgradBlue{background-image: linear-gradient(180deg,var(--Col_Grad2),var(--Col_Grad1));}
 /* shadows */
 .shadow{box-shadow          : 0px 2px 6px var(--Col_Shadow);}
 .shadowLarge{box-shadow     : 3px 3px 20px rgba(0, 0, 0, 0.164);}
@@ -128,7 +128,7 @@ body{
     font-size            : 16px;
     font-family          : 'Quicksand', sans-serif;
     font-weight          : 400;
-    background-image     : url("/Images/back.jpg");
+    background-image     : url("../Images/back.jpg");
     background-repeat    : no-repeat;
     background-size      : cover;
     background-attachment: fixed;
@@ -138,6 +138,7 @@ body{
     line-height          : 1.5rem;
     letter-spacing       : 0.05rem;
     color                : var(--Col_Gray);
+    overflow-x: hidden;
 }
 p strong{
     font-weight: 900;
@@ -166,60 +167,74 @@ p strong{
 .rotRight{transform: rotate(3deg);}
 .rotLeft{transform: rotate(-3deg);}
 /* NAVBAR<<______________________________________________________________ */
-#navbar{
+#navbar2{
+    position: sticky;
+    top: 0;
+}
+.navbar{
     width           : 100%;
-    position        : fixed;
-    position        : top;
+    /* position        : fixed;
+    position        : top; */
+    
+    z-index         : 2;
+    background-color: var(--Col_Black);
+}
+.navbar> .container{
+    width           : 100%;
+    /* position        : fixed;
+    position        : top; */
+    position: sticky;
+    top: 0;
     z-index         : 2;
     background-color: var(--Col_Black);
 }
 /* nav buttons */
-#navbar [href]{
+.navbar [href]{
     color          : rgb(255, 255, 255);
     text-decoration: none;
     font-weight    : 400;
 }
-#navButtons a.current{font-weight: 600;}
+.navButtons a.current{font-weight: 600;}
 
-#navButtons> li:nth-child(1) a:hover{background-color: var(--Col_Main);}
+.navButtons> li:nth-child(1) a:hover{background-color: var(--Col_Main);}
 
-#navButtons> li:nth-child(2) a:hover{background-color: var(--Col_Sec);}
+.navButtons> li:nth-child(2) a:hover{background-color: var(--Col_Sec);}
 
-#navButtons> li:nth-child(3) a:hover{background-color: var(--Col_Comp);}
+.navButtons> li:nth-child(3) a:hover{background-color: var(--Col_Comp);}
 
-#navButtons> li:nth-child(4) a:hover{background-color: var(--Col_SecLight);}
+.navButtons> li:nth-child(4) a:hover{background-color: var(--Col_SecLight);}
 
-#navButtons> li:nth-child(1) a.current{
+.navButtons> li:nth-child(1) a.current{
     border-bottom   : 5px solid var(--Col_Main);
     background-color: rgb(0, 0, 0);
     padding-top     : 5px;
 }
-#navButtons> li:nth-child(2) a.current{
+.navButtons> li:nth-child(2) a.current{
     border-bottom   : 5px solid var(--Col_Sec);
     background-color: rgb(0, 0, 0);
     padding-top     : 5px;
 }
-#navButtons> li:nth-child(3) a.current{
+.navButtons> li:nth-child(3) a.current{
     border-bottom   : 5px solid var(--Col_Comp);
     background-color: rgb(0, 0, 0);
     padding-top     : 5px;
 }
-#navButtons> li:nth-child(4) a.current{
+.navButtons> li:nth-child(4) a.current{
     border-bottom   : 5px solid var(--Col_SecLight);
     background-color: rgb(0, 0, 0);
     padding-top     : 5px;
 }
 
-#navbar ul{padding:0px;}
+.navbar ul{padding:0px;}
 
-#logo{
+.logo{
     flex           : 0 100%;
     text-align     : center;
     display        : flex;
     justify-content: center;
     padding        : 10px 0px;
 }
-#logo img{
+.logo img{
     display   : box;
     object-fit: contain;
     width     : 90%;
@@ -242,14 +257,14 @@ nav li a{
     display      : flex;
     align-items  : center;
 }
-#navElement{
+.navElement{
     display        : flex;
     align-items    : center;
     justify-content: center;
     flex-wrap      : wrap;
     align-items    : stretch;
 }
-#navButtons{
+.navButtons{
     display        : flex;
     align-items    : center;
     width          : 100%;
@@ -259,7 +274,7 @@ nav li a{
     align-items    : stretch;
     border-top     : 1px solid white;
 }
-#navButtons p{
+.navButtons p{
     margin: 0px;
 }
 .icon{
@@ -270,13 +285,50 @@ nav li a{
 .buttonTXT{display: none;padding-left: 10px}
 /* NAVBAR>>______________________________________________________________ */
 
+/* Video<<______________________________________________________________ */
+.videoContainer{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.panorama>source{
+    object-fit: cover;
+    z-index: -1;
+  }
+  .panorama{
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+  }
+
+/* Video>>______________________________________________________________ */
+
 /* Slogan<<______________________________________________________________ */
+#sloganBCK{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height          : 100vh;
+    font-size       : 1.7em;
+    letter-spacing  : 0.15em;
+    width           : 100%;
+    mix-blend-mode: overlay;
+}
 #slogan{
-    height          : 90vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height          : 100vh;
     font-size       : 1.7em;
     letter-spacing  : 0.15em;
     text-align      : center;
-    padding-bottom  : 5vw;
+    margin-bottom  : 5vw;
     width           : 100%;
 }
 #slogan span{
@@ -293,13 +345,15 @@ nav li a{
 
 /* Fleche<<______________________________________________________________ */
 .flecheContain{
+    width: 100%;
     text-align: center;
-    position  : relative;
-    top       : -10vw;
+    position  : absolute;
+    top       : 100vh;
 }
-.fleche:nth-child(2){
+.fleche{
+    width: 100%;
     position: relative;
-    top     : -1.5vw;
+    translate: 0 -40%;
 }
 .fleche img{
     width: 100%;
@@ -320,12 +374,17 @@ main{
     background-color: var(--Col_Black);
 }
 .colorLine{
-    height : 5vw;
+    height : 5px;
 }
 .colorLine>div{
     width: 25%;
 }
-
+.colorLineNav{
+    height : 5px;
+}
+.colorLineNav>div{
+    width: 25%;
+}
 h1{
     font-size     : 1.8em;
     letter-spacing: 0.1em;
@@ -432,7 +491,7 @@ h2{
 }
 /* medium<<______________________________ */
 @media (min-width:900px){
-    #navButtons{
+    .navButtons{
         justify-content: space-between;
     }
     .buttonTXT{
@@ -454,15 +513,15 @@ h2{
 }
 /* large<<______________________________ */
 @media (min-width:1190px){
-    #navButtons{
+    .navButtons{
         justify-content: space-between;
     }
-    #logo{
+    .logo{
         flex         : 0 15%;
         padding-right: 25px;
         text-align   : left;
     }
-    #logo img{
+    .logo img{
         width : 172px;
         height: 54px;
     }
@@ -472,7 +531,7 @@ h2{
     #slogan{
         font-size: 2.5rem;
     }
-    #navButtons{
+    .navButtons{
         border-top: none;
     }
     .container{
