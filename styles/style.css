@@ -58,14 +58,14 @@
 /* @colors */
 :root{
     --Col_MainLight: #98efff;
-    --Col_Main     : #009aa8;
-    --Col_Comp     : #fd8a76;
-    --Col_Sec      : #eabe2b;
-    --Col_SecLight : #9bcc15;
+    --Col_Main     : #118AB2;
+    --Col_Comp     : #EF476F;
+    --Col_Sec      : #FFD166;
+    --Col_SecLight : #06D6A0;
     --Col_Grad1    : rgba(0, 255, 255, 0.171);
     --Col_Grad2    : #a2fff4;
     --Col_Gray     : #4B504D;
-    --Col_Black    : #0d110d;
+    --Col_Black    : #073B4C;
     --Col_White_a95: rgba(255, 255, 255, 0.85);
     --Col_Shadow   : rgba(0, 0, 0, 0.37);
 }
@@ -333,7 +333,7 @@ nav li a{
 #slogan div p:last-child{
     border-radius   : 70px 5px;
     padding: 5px 4vw;
-    background-image: linear-gradient(30deg,var(--Col_Sec),var(--Col_Comp));
+    background-image: linear-gradient(30deg,var(--Col_Black),var(--Col_Main));
 }
 /* Slogan>>______________________________________________________________ */
 
