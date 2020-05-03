@@ -3,9 +3,9 @@
 @font-face {
     font-family: 'Glyphter';
     src : url('../fonts/Glyphter.eot');
-    src : url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
-          url('../fonts/Glyphter.woff') format('woff'),
-          url('../fonts/Glyphter.ttf') format('truetype'),
+    src : url('../fonts/Glyphter.eot?#iefix')   format('embedded-opentype'),
+          url('../fonts/Glyphter.woff')         format('woff'),
+          url('../fonts/Glyphter.ttf')          format('truetype'),
           url('../fonts/Glyphter.svg#Glyphter') format('svg');
     font-weight: normal;
     font-style : normal;
@@ -19,85 +19,84 @@
 	-webkit-font-smoothing : antialiased;
 	-moz-osx-font-smoothing: grayscale
 }
-.icon-foires:before{content:'\0041';}
-.icon-Accueil:before{content:'\0042';}
-.icon-Lieux:before{content:'\0043';}
-.icon-news:before{content:'\0044';}
-.icon-mail:before{content:'\0045';}
+.icon-foires:before {content:   '\0041';}
+.icon-Accueil:before{content:   '\0042';}
+.icon-Lieux:before  {content:   '\0043';}
+.icon-news:before   {content:   '\0044';}
+.icon-mail:before   {content:   '\0045';}
 /* Font Icons>>______________________________________________________________ */
 
 /* font types */
-.fontSec{font-family: 'Baloo Paaji 2', cursive;}
-.fontI{font-style: italic;}
-.fontB{font-weight: bold;}
-.fontSB{font-weight: 600;}
+.fontSec    {font-family    : 'Baloo Paaji 2', cursive;}
+.fontI      {font-style     : italic;}
+.fontB      {font-weight    : bold;}
+.fontSB     {font-weight    : 600;}
 /* font sizes */
-.fSize220{ font-size: 13.75rem}
-.fSize120{ font-size: 7.5rem}
-.fSize48{ font-size: 3rem}
-.fSize36{ font-size: 2.25rem}
-.fSize34{ font-size: 2.13rem}
-.fSize24{ font-size: 1.5rem}
-.fSize20{ font-size: 1.25rem}
-.fSize18{ font-size: 1.13rem}
-.fSize16{ font-size: 1rem}
-.fSize15{ font-size: 0.94rem}
-.fSize14{ font-size: 0.88rem}
-.fSize13{ font-size: 0.81rem}
-.fSize12{ font-size: 0.75rem}
+.fSize220   { font-size     : 13.75rem}
+.fSize120   { font-size     : 7.5rem}
+.fSize48    { font-size     : 3rem}
+.fSize36    { font-size     : 2.25rem}
+.fSize34    { font-size     : 2.13rem}
+.fSize24    { font-size     : 1.5rem}
+.fSize20    { font-size     : 1.25rem}
+.fSize18    { font-size     : 1.13rem}
+.fSize16    { font-size     : 1rem}
+.fSize15    { font-size     : 0.94rem}
+.fSize14    { font-size     : 0.88rem}
+.fSize13    { font-size     : 0.81rem}
+.fSize12    { font-size     : 0.75rem}
 /* font positioning */
-.fspace{letter-spacing: 2rem;}
-.TXTleft{text-align: center;}
-.TXTcenter{text-align: center;}
-.TXTjustif{text-align: justify;}
-.TXTlineL{line-height: 2rem;}
-.TXTlineXL{line-height: 3rem;}
+.fspace     {letter-spacing : 2rem;}
+.TXTleft    {text-align     : center;}
+.TXTcenter  {text-align     : center;}
+.TXTjustif  {text-align     : justify;}
+.TXTlineL   {line-height    : 2rem;}
+.TXTlineXL  {line-height    : 3rem;}
 /*FONTS>>____________________________________________________________________________________*/
 
 /*COLOR VALUES<<____________________________________________________________________________________*/
 /* @colors */
 :root{
-    --Col_MainLight: #98efff;
-    --Col_Main     : #118AB2;
-    --Col_Comp     : #EF476F;
-    --Col_Sec      : #FFD166;
-    --Col_SecLight : #06D6A0;
-    --Col_Grad1    : rgba(0, 255, 255, 0.171);
+    --Col_MainLight: #416583;
+    --Col_Main     : #214a5a;
+    --Col_Comp     : #C7F464;
+    --Col_Sec      : #4ECDC4;
+    --Col_SecLight : #FFA04A;
+    --Col_Grad1    : rgba(255, 161, 74, 0.685);
     --Col_Grad2    : #a2fff4;
-    --Col_Gray     : #4B504D;
-    --Col_Black    : #073B4C;
+    --Col_Black    : #739bb9;
     --Col_White_a95: rgba(255, 255, 255, 0.85);
-    --Col_Shadow   : rgba(0, 0, 0, 0.37);
+    --Col_Shadow   : #214a5a3f;
 }
 /* classes text */
-.TXTmain{color: var(--Col_Main);}
-.TXTcomp{color: var(--Col_Comp);}
-.TXTsec{color: var(--Col_Sec);}
-.TXTseclight{color: var(--Col_SecLight);}
-.TXTdark{color: var(--Col_Black);}
-.TXTmed{color: var(--Col_Gray);}
-.TXTmainlight{color: var(--Col_MainLight);}
-.TXTwhite{color:white;}
+.TXTmain{color      :      var(--Col_Main);}
+.TXTcomp{color      :      var(--Col_Comp);}
+.TXTsec{color       :      var(--Col_Sec);}
+.TXTseclight{color  :      var(--Col_SecLight);}
+.TXTdark{color      :      var(--Col_Black);}
+.TXTmainlight{color :      var(--Col_MainLight);}
+.TXTwhite{color     :      white;}
 
 /* classes background */
-.BCKwhiteA{background-color: var(--Col_White_a95);}
-.BCKmain{background-color: var(--Col_Main);}
-.BCKsec{background-color: var(--Col_Sec);}
-.BCKseclight{background-color: var(--Col_SecLight);}
-.BCKcomp{background-color: var(--Col_Comp);}
-.BCKDark{background-color: var(--Col_Black);}
+.BCKmainLight{background-color: var(--Col_MainLight);}
+.BCKwhiteA{background-color   : var(--Col_White_a95);}
+.BCKmain{background-color     : var(--Col_Main);}
+.BCKsec{background-color      : var(--Col_Sec);}
+.BCKseclight{background-color : var(--Col_SecLight);}
+.BCKcomp{background-color     : var(--Col_Comp);}
+.BCKDark{background-color     : var(--Col_Black);}
 
 /* gradients */
-.BCKgradBlue{background-image: linear-gradient(180deg,var(--Col_Grad2),var(--Col_Grad1));}
+.BCKgradBlue{background-image: linear-gradient(45deg,var(--Col_Grad1),var(--Col_Main));}
 /* shadows */
-.shadow{box-shadow          : 0px 2px 10px var(--Col_Shadow);}
+.shadow{box-shadow          : 0px 8px 6px   var(--Col_Shadow);}
 .shadowLarge{box-shadow     : 3px 3px 20px rgba(0, 0, 0, 0.164);}
 .shadowPost{box-shadow      : 3px 3px 10px rgba(10, 99, 117,0.25);}
-.txtshadow{text-shadow      : 3px 3px 4px var(--Col_Shadow);}
+.txtshadow{text-shadow      : 3px 3px 4px   var(--Col_Shadow);}
 
 /* borders */
 .borderPostR{border-right   : 15px solid var(--Col_Comp);}
-.borderPostL{border-left   : 15px solid var(--Col_Comp);}
+.borderPostL{border-left    : 15px solid var(--Col_Comp);}
 
 /* lettrines */
 .lettrine::first-letter{
@@ -107,17 +106,15 @@
     font-weight : bold;
     color       : var(--Col_SecLight);
     margin-right: 15px;
-    /* background-color: var(--Col_SecLight);
-    padding: 5px; */
 }
 /*COLOR VALUES>>____________________________________________________________________________________*/
 
 /*FLEX<<____________________________________________________________________________________*/
 .flex{display: flex;}
 .flexCenterCenter{
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
 }
 .flexReverse{flex-direction: row-reverse;}
 
@@ -125,125 +122,68 @@
 
 /* Generic<<______________________________________________________________ */
 .back{
-    position: fixed;
-    width: 100%;
-    height: 150vh;
-    z-index: -1;
+    position             : fixed;
+    width                :      100%;
+    height               :     150vh;
+    z-index              :    -1;
     background-image     : url("../Images/back.jpg");
-    background-size: cover;
+    background-size      : cover;
 }
 body{
     font-size            : 16px;
     font-family          : 'Quicksand', sans-serif;
     font-weight          : 400;
-    /* background-image     : url("../Images/back.jpg");
-    background-repeat    : no-repeat;
-    background-size      : cover;
-    background-attachment: fixed; */
     padding              : 0px;
     margin               : 0px;
     height               : 100%;
     line-height          : 1.5rem;
     letter-spacing       : 0.05rem;
-    color                : var(--Col_Gray);
-    overflow-x: hidden;
+    color                : white;
+    overflow-x           : hidden;
 }
-p strong{
-    font-weight: 900;
+main{
+    text-align  : center;
+    position    : abolute;
+    top         : 100vh;
 }
-[href]{
-    text-decoration: none;
-}
+
+p strong{font-weight: 900;}
+
+[href]{text-decoration: none;}
 /* Generic>>______________________________________________________________ */
 
 /* Containers<<______________________________________________________________ */
 .container{
-    max-width    : 1200px;
-    margin       : 0 auto;
-    padding-left : 20px;
-    padding-right: 20px;
+    max-width       : 1200px;
+    margin          : 0 auto;
+    padding-left    : 10px;
+    padding-right   : 10px;
 }/* Containers>>______________________________________________________________ */
 
 /* Box Model<<______________________________________________________________ */
-.m0{margin: 0px;}
-.p0{padding: 0px;}
-.mp0{margin: 0px; padding: 0px;}
-.m0child *{margin: 0px;}
+.m0{margin:         0px;}
+.p0{padding:        0px;}
+.mp0{margin:        0px; padding: 0px;}
+.m0child *{margin:  0px;}
 /* Box Model>>______________________________________________________________ */
 
 /* transforms */
-.rotRight{transform: rotate(3deg);}
-.rotLeft{transform: rotate(-3deg);}
+.rotRight   {transform  : rotate(3deg);}
+.rotLeft    { transform : rotate(-3deg);}
+
 /* NAVBAR<<______________________________________________________________ */
-#navbar2{
-    position: sticky;
-    top: 0;
-    z-index: 2;
+.navbar{
+    position        : sticky;
+    top             : 0;
+    z-index         : 2;
+    margin-bottom   : 80vh;
 }
-/* nav buttons */
 .navbar [href]{
     color          : rgb(255, 255, 255);
     text-decoration: none;
     font-weight    : 400;
 }
-.navButtons{min-height:60px;}
-.navButtons a.current{font-weight: 600;}
-
-.navButtons> li:nth-child(1) a:hover{background-color: var(--Col_Main);}
-
-.navButtons> li:nth-child(2) a:hover{background-color: var(--Col_Sec);}
-
-.navButtons> li:nth-child(3) a:hover{background-color: var(--Col_Comp);}
-
-.navButtons> li:nth-child(4) a:hover{background-color: var(--Col_SecLight);}
-
-.navButtons> li:nth-child(1) a.current{
-    border-bottom   : 5px solid var(--Col_Main);
-    background-color: rgb(0, 0, 0);
-    padding-top     : 5px;
-}
-.navButtons> li:nth-child(2) a.current{
-    border-bottom   : 5px solid var(--Col_Sec);
-    background-color: rgb(0, 0, 0);
-    padding-top     : 5px;
-}
-.navButtons> li:nth-child(3) a.current{
-    border-bottom   : 5px solid var(--Col_Comp);
-    background-color: rgb(0, 0, 0);
-    padding-top     : 5px;
-}
-.navButtons> li:nth-child(4) a.current{
-    border-bottom   : 5px solid var(--Col_SecLight);
-    background-color: rgb(0, 0, 0);
-    padding-top     : 5px;
-}
-
 .navbar ul{padding:0px;}
-
-nav{
-    align-items: stretch;
-    flex       : 0 100%;
-}
-nav li{
-    list-style : none;
-    line-height: 2em;
-    font-weight: 600;
-    display    : flex;
-    align-items: justify;
-}
-nav li a{
-    padding-right: 15px;
-    padding-left : 15px;
-    display      : flex;
-    align-items  : center;
-}
-.navElement{
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    flex-wrap      : wrap;
-    align-items    : stretch;
-}
 .navButtons{
     display        : flex;
     align-items    : center;
@@ -252,185 +192,159 @@ nav li a{
     flex-wrap      : wrap;
     justify-content: space-around;
     align-items    : stretch;
+    min-height     : 60px;
 }
-#navbar1 .navButtons{
-    border-top     : 1px solid white;
+.navButtons p               {margin: 0px;}
+.navButtons a.current       {font-weight: 600;}
+.navButtons> li a.current   {background-color: var(--Col_MainLight);}
+.navButtons> li a:hover     {background-color: var(--Col_Main);}
+.navElement{
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-wrap      : wrap;
+    align-items    : stretch;
 }
-.navButtons p{
-    margin: 0px;
-}
+.buttonTXT  {display : none;padding-left: 10px}
 .icon{
-    font-size     : 2rem;
-    padding-bottom: 10px;
-    padding-top   : 10px;
+    font-size      : 2rem;
+    padding-bottom : 10px;
+    padding-top    : 10px;
 }
-.buttonTXT{display: none;padding-left: 10px}
-/* NAVBAR>>______________________________________________________________ */
+nav{
+    align-items    : stretch;
+    flex           : 0 100%;
+}
+nav li{
+    list-style     : none;
+    line-height    : 2em;
+    font-weight    : 600;
+    display        : flex;
+    align-items    : justify;
+}
+nav li a{
+    padding-right  : 15px;
+    padding-left   : 15px;
+    display        : flex;
+    align-items    : center;
+}/* NAVBAR>>______________________________________________________________ */
 
 /* Video<<______________________________________________________________ */
 .videoContainer{
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    top         : 0;
+    left        : 0;
+    width       : 100%;
+    height      : 100vh;
+    overflow    : hidden;
 }
 .panorama>source{
-    object-fit: cover;
-    z-index: -1;
-  }
-  .panorama{
-    min-width: 100%;
-    min-height: 100%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    z-index: -1;
-    background-image: url("../Videos/PanoramaFallback.png");
-    background-size: 100% 100%;
-    background-position-x: 50%;
-    background-position-y: 50%;
-  }
-
-/* Video>>______________________________________________________________ */
+    object-fit  : cover;
+    z-index     : -1;
+}
+.panorama{
+  min-width             : 100%;
+  min-height            : 100%;
+  position              : relative;
+  top                   : 50%;
+  left                  : 50%;
+  transform             : translateX(-50%) translateY(-50%);
+  z-index               : -1;
+  background-image      : url("../Videos/PanoramaFallback.png");
+  background-size       : 100% 100%;
+  background-position-x : 50%;
+  background-position-y : 50%;
+}/* Video>>______________________________________________________________ */
 
 /* Slogan<<______________________________________________________________ */
 #logoL{
-    object-fit: contain;
-    width     : 100%;
-    height: 100%;
-    max-width: 80vh;
+    object-fit  : contain;
+    width       : 100%;
+    height      : 100%;
+    max-width   : 80vh;
 }
 #sloganBCK{
-    position: absolute;
-    top: 0;
-    left: 0;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
     height          : 100vh;
     font-size       : 1.7em;
     letter-spacing  : 0.15em;
     width           : 100%;
-    mix-blend-mode: overlay;
+    mix-blend-mode  : overlay;
 }
 #slogan{
-    position: absolute;
-    top: 0;
-    left: 0;
+    position:       absolute;
+    top             : 0;
+    left            : 0;
     height          : 100vh;
     font-size       : 1.7em;
     letter-spacing  : 0.15em;
     text-align      : center;
-    margin-bottom  : 5vw;
+    margin-bottom   : 5vw;
     width           : 100%;
 }
-/* #slogan span{
-    line-height: 100%;
-    display    : block;
-    margin     : 40px, 0px;
-} */
-#slogan div p{
-    margin: 0px;
-}
+#slogan div p   {margin: 0px;}
 #slogan div p:last-child{
     border-radius   : 70px 5px;
-    padding: 5px 4vw;
-    background-image: linear-gradient(30deg,var(--Col_Black),var(--Col_Main));
-}
-/* Slogan>>______________________________________________________________ */
+    padding         : 5px 4vw;
+}/* Slogan>>______________________________________________________________ */
 
-/* Fleche<<______________________________________________________________ */
-.flecheContain{
-    width: 100%;
-    text-align: center;
-    position  : absolute;
-    top       : 100vh;
-}
-.fleche{
-    width: 100%;
-    position: relative;
-    translate: 0 -40%;
-}
-.fleche img{
-    width: 100%;
-}
-/* Fleche>>______________________________________________________________ */
 
-main{
-        text-align: center;
-        position  : abolute;
-        top       : 100vh;
-}
 /* TITLES>>______________________________________________________________ */
-#blocTitle{
-    margin-bottom   : 0px;
-    padding-top     : 1px;
-    padding-bottom  : 1px;
-    margin-top      : 25vw;
-    background-color: var(--Col_Black);
-}
+#blocTitle      {margin   : 50vh 0px; min-height: 300px;}
+#blocTitle p    {width    : 95%;}
+
 .colorLine{
-    height : 25vw;
+    height:     15vw;
     min-height: 100px;
 }
-.colorLine>div{
-    width: 25%;
-}
-.colorLineNav{
-    height : 5px;
-}
-.colorLineNav>div{
-    width: 25%;
-}
+.colorLine>div      {width  :   25%;}
+.colorLineNav       {height :   5px;}
+.colorLineNav>div   {width  :   25%;}
+
 h1{
-    font-size     : 1.8em;
-    letter-spacing: 0.1em;
-    text-align    : center;
-    font-weight   : 500;
-    padding-top   : 8vw;
-    padding-bottom: 8vw;
+    font-size       : 1.8em;
+    letter-spacing  : 0.1em;
+    text-align      : center;
+    font-weight     : 500;
+    text-transform  : uppercase;
+    line-height     : 2.5rem;
+}
+h2{
+    font-family     : 'Baloo Paaji 2', cursive;
+    font-weight     : 400;
+    font-size       : 1.4em;
+    letter-spacing  : 0.05em;
+    margin-top      : 10px;
+    margin-bottom   : 10px;
+    text-transform  : uppercase;
+    line-height     : 1.8rem;
 }
 
-h2{
-    font-family   : 'Baloo Paaji 2', cursive;
-    font-weight   : 400;
-    font-size     : 1.4em;
-    letter-spacing: 0.05em;
-    margin-top    : 10px;
-    margin-bottom : 10px;
-}
 /* IMAGES>>______________________________________________________________ */
-.cover1{background-image: url("/Images/accueil/fullsize/meteo.jpg");}
+.cover1   {background-image: url("../Images/accueil/fullsize/meteo.jpg");}
 .img-cover{
     background-position: center;
     background-size    : cover;
     align-self         : stretch;
 }
-.cover-link{
-    filter : grayscale(1);
-    opacity: 1;
-}
-.cover-link:hover{
-    filter : none;
-    opacity: 1;
-}
 .img-cover a{
     display: block;
-
     height : 100%
 }
-.loopBox{display:flex ; align-items: center;}
+.loopBox    {display:flex ; align-items: center;}
 
 /* lieux */
-.lieux1{background-image: url("/Images/lieux/puydedome/PuyLarge.jpg");}
-.lieux2{background-image: url("/Images/lieux/chainedespuys/chaineLarge.jpg");}
-.lieux3{background-image: url("/Images/lieux/cathedrale/CathedraleLarge.jpg");}
-.lieux4{background-image: url("/Images/lieux/vulcania/vulcaniaLarge.jpg");}
-.lieux5{background-image: url("/Images/lieux/lacdeguery/gueryLarge.jpg");}
-.lieux6{background-image: url("/Images/lieux/grottepierre/grotteLarge.jpg");}
-.lieux7{background-image: url("/Images/lieux/superbesse/SuperBesseLarge.jpg");}
-.lieux8{background-image: url("/Images/lieux/gergovie/GergovieLarge.jpg");}
-.lieux9{background-image: url("/Images/lieux/lacPavin/PavinLarge.jpg");}
-.lieux10{background-image: url("/Images/lieux/murol/MurolLarge.jpg");}
+.lieux1 {background-image:  url("../Images/lieux/puydedome/PuyLarge.jpg");}
+.lieux2 {background-image:  url("../Images/lieux/chainedespuys/chaineLarge.jpg");}
+.lieux3 {background-image:  url("../Images/lieux/cathedrale/CathedraleLarge.jpg");}
+.lieux4 {background-image:  url("../Images/lieux/vulcania/vulcaniaLarge.jpg");}
+.lieux5 {background-image:  url("../Images/lieux/lacdeguery/gueryLarge.jpg");}
+.lieux6 {background-image:  url("../Images/lieux/grottepierre/grotteLarge.jpg");}
+.lieux7 {background-image:  url("../Images/lieux/superbesse/SuperBesseLarge.jpg");}
+.lieux8 {background-image:  url("../Images/lieux/gergovie/GergovieLarge.jpg");}
+.lieux9 {background-image:  url("../Images/lieux/lacPavin/PavinLarge.jpg");}
+.lieux10{background-image:  url("../Images/lieux/murol/MurolLarge.jpg");}
 
 /* SECTIONS>>______________________________________________________________ */
 .secTopBar{
@@ -449,27 +363,20 @@ h2{
     justify-content : space-between;
     align-items     : center;
 }
-.sec{
-    margin-top   : 8vw;
-}
-.post{
-    flex            : 0 60%;
-}
-.post>div{
-    padding: 30px 5vw;
-}
-/* .post strong{background-color: var(--Col_Sec); } */
-.postillu{
-    flex: 0 40%;
-}
+.sec{margin-bottom  : 50vh;}
+
+.post       {flex      : 0 60%;}
+.post>div   {padding   : 30px 5vw;}
+
+.postillu   {flex: 0 40%;}
 .postillu>a{
     display: block;
     width: 100%;
 }
 .postillu>a:hover{
-    background-image: url("/Images/loupe.png");
-    background-repeat: no-repeat;
-    background-position: center ;
+    background-image    :    url("../Images/loupe.png");
+    background-repeat   :    no-repeat;
+    background-position :    center ;
 }
 .postillu>div img{
     box-sizing: border-box;
@@ -487,43 +394,22 @@ h2{
 }
 /* medium<<______________________________ */
 @media (min-width:900px){
-    .navButtons{
-        justify-content: space-between;
-    }
-    .buttonTXT{
-        display: inline;
-    }
+    .buttonTXT  {display: inline;}
     .icon{
         font-size     : 1rem;
         padding-bottom: 0px;
         padding-top   : 0px;
     }
     .container{
-        width    : 85%;
-        max-width: 1200px;
+        width         : 85%;
+        max-width     : 1200px;
     }
 
 }
 /* large<<______________________________ */
 @media (min-width:1190px){
-    .navButtons{
-        justify-content: space-between;
-    }
-    .logo{
-        flex         : 0 15%;
-        padding-right: 25px;
-        text-align   : left;
-    }
-    .logo img{
-        width : 172px;
-        height: 54px;
-    }
-    nav{
-        flex: 0 80%;
-    }
-
     .container{
-        width    : 80%;
-        max-width: 1200px;
+        width         : 80%;
+        max-width     : 1200px;
     }
 }/* RESPONSIVE>>_________________________________________________________ */
