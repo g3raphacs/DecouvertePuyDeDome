@@ -2,22 +2,22 @@
 /* Font Icons<<______________________________________________________________ */
 @font-face {
     font-family: 'Glyphter';
-    src : url('../fonts/Glyphter.eot');
-    src : url('../fonts/Glyphter.eot?#iefix')   format('embedded-opentype'),
-          url('../fonts/Glyphter.woff')         format('woff'),
-          url('../fonts/Glyphter.ttf')          format('truetype'),
-          url('../fonts/Glyphter.svg#Glyphter') format('svg');
+    src :       url('../fonts/Glyphter.eot'             );
+    src :       url('../fonts/Glyphter.eot?#iefix'      )     format('embedded-opentype'  ),
+                url('../fonts/Glyphter.woff'            )     format('woff'               ),
+                url('../fonts/Glyphter.ttf'             )     format('truetype'           ),
+                url('../fonts/Glyphter.svg#Glyphter'    )     format('svg'                );
     font-weight: normal;
     font-style : normal;
 }
 [class*='icon-']:before{
-	display                     : inline-block;
-	font-family                 : 'Glyphter';
-	font-style                  : normal;
-	font-weight                 : normal;
-	line-height                 : 1;
-	-webkit-font-smoothing      : antialiased;
-	-moz-osx-font-smoothing     : grayscale
+	display                     : inline-block  ;
+	font-family                 : 'Glyphter'    ;
+	font-style                  : normal        ;
+	font-weight                 : normal        ;
+	line-height                 : 1             ;
+	-webkit-font-smoothing      : antialiased   ;
+	-moz-osx-font-smoothing     : grayscale     ;
 }
 .icon-foires:before     {   content:   '\0041';     }
 .icon-Accueil:before    {   content:   '\0042';     }
@@ -57,25 +57,25 @@
 /*COLOR VALUES<<____________________________________________________________________________________*/
 /* @colors */
 :root{
-    --Col_MainLight             :        #416583;
-    --Col_Main                  :        #214a5a;
-    --Col_Comp                  :        #C7F464;
-    --Col_Sec                   :        #4ECDC4;
-    --Col_SecLight              :        #FFA04A;
-    --Col_Grad1                 :        rgba(255, 161, 74, 0.685);
-    --Col_Grad2                 :        #a2fff4;
-    --Col_Black                 :        #739bb9;
-    --Col_White_a95             :        rgba(255, 255, 255, 0.85);
-    --Col_Shadow                :        #214a5a3f;
+    --Col_MainLight             :        #416583                    ;
+    --Col_Main                  :        #214a5a                    ;
+    --Col_Comp                  :        #C7F464                    ;
+    --Col_Sec                   :        #4ECDC4                    ;
+    --Col_SecLight              :        #FFA04A                    ;
+    --Col_Grad1                 :        rgba(255, 161, 74, 0.685)  ;
+    --Col_Grad2                 :        #a2fff4                    ;
+    --Col_Black                 :        #739bb9                    ;
+    --Col_White_a95             :        rgba(255, 255, 255, 0.85)  ;
+    --Col_Shadow                :        #214a5a3f                  ;
 }
 /* classes text */
-.TXTmain        {   color       :        var(--Col_Main);}
-.TXTcomp        {   color       :        var(--Col_Comp);}
-.TXTsec         {   color       :        var(--Col_Sec);}
-.TXTseclight    {   color       :        var(--Col_SecLight);}
-.TXTdark        {   color       :        var(--Col_Black);}
-.TXTmainlight   {   color       :        var(--Col_MainLight);}
-.TXTwhite       {   color       :        white;}
+.TXTmain        {   color       :        var(--Col_Main);       }
+.TXTcomp        {   color       :        var(--Col_Comp);       }
+.TXTsec         {   color       :        var(--Col_Sec);        }
+.TXTseclight    {   color       :        var(--Col_SecLight);   }
+.TXTdark        {   color       :        var(--Col_Black);      }
+.TXTmainlight   {   color       :        var(--Col_MainLight);  }
+.TXTwhite       {   color       :        white;               }
 
 /* classes background */
 .BCKmainLight   {   background-color   : var(--Col_MainLight);  }
@@ -95,51 +95,51 @@
 .txtshadow      {   text-shadow        : 3px 3px 4px    var(--Col_Shadow);          }
 
 /* borders */
-.borderPostR    {   border-right   : 15px solid var(--Col_Comp);    }
-.borderPostL    {   border-left    : 15px solid var(--Col_Comp);    }
+.borderPostR    {   border-right       : 15px solid     var(--Col_Comp);            }
+.borderPostL    {   border-left        : 15px solid     var(--Col_Comp);            }
 
 /* lettrines */
 .lettrine::first-letter{
-    display     : block;
-    font-size   : 4rem;
-    float       : left;
-    font-weight : bold;
-    color       : var(--Col_SecLight);
-    margin-right: 15px;
+    display     : block                ;
+    font-size   : 4rem                 ;
+    float       : left                 ;
+    font-weight : bold                 ;
+    color       : var(--Col_SecLight)  ;
+    margin-right: 15px                 ;
 }
 /*COLOR VALUES>>____________________________________________________________________________________*/
 
 /*FLEX<<____________________________________________________________________________________*/
-.flex{display: flex;}
+.flex   {   display: flex;  }
 .flexCenterCenter{
-    display         : flex;
-    align-items     : center;
-    justify-content : center;
+    display         : flex      ;
+    align-items     : center    ;
+    justify-content : center    ;
 }
-.flexReverse{flex-direction: row-reverse;}
+.flexReverse    {   flex-direction: row-reverse;    }
 
 /*FLEX>>____________________________________________________________________________________*/
 
 /* Generic<<______________________________________________________________ */
 .back{
-    position             : fixed;
-    width                : 100%;
-    height               : 150vh;
-    z-index              : -1;
+    position             : fixed                    ;
+    width                : 100%                     ;
+    height               : 150vh                    ;
+    z-index              : -1                       ;
     background-image     : url("../Images/back.jpg");
-    background-size      : cover;
+    background-size      : cover                    ;
 }
 body{
-    font-size            : 16px;
-    font-family          : 'Quicksand', sans-serif;
-    font-weight          : 400;
-    padding              : 0px;
-    margin               : 0px;
-    height               : 100%;
-    line-height          : 1.5rem;
-    letter-spacing       : 0.05rem;
-    color                : white;
-    overflow-x           : hidden;
+    font-size            : 16px                     ;
+    font-family          : 'Quicksand', sans-serif  ;
+    font-weight          : 400                      ;
+    padding              : 0px                      ;
+    margin               : 0px                      ;
+    height               : 100%                     ;
+    line-height          : 1.5rem                   ;
+    letter-spacing       : 0.05rem                  ;
+    color                : white                  ;
+    overflow-x           : hidden                   ;
 }
 main{
     text-align  : center;
@@ -147,17 +147,17 @@ main{
     top         : 100vh;
 }
 
-p strong{font-weight: 900;}
+p strong    {   font-weight     : 900;   }
 
-[href]{text-decoration: none;}
+[href]      {   text-decoration : none;  }
 /* Generic>>______________________________________________________________ */
 
 /* Containers<<______________________________________________________________ */
 .container{
-    max-width       : 1200px;
-    margin          : 0 auto;
-    padding-left    : 10px;
-    padding-right   : 10px;
+    max-width       : 1200px    ;
+    margin          : 0 auto    ;
+    padding-left    : 10px      ;
+    padding-right   : 10px      ;
 }/* Containers>>______________________________________________________________ */
 
 /* Box Model<<______________________________________________________________ */
@@ -174,227 +174,228 @@ p strong{font-weight: 900;}
 /* NAVBAR<<______________________________________________________________ */
 
 .navbar{
-    position        : sticky;
-    position: -webkit-sticky;
-    top             : 0;
-    z-index         : 2;
-    margin-bottom   : 30vh;
+    position        : sticky        ;
+    position: -webkit-sticky        ;
+    top             : 0             ;
+    z-index         : 2             ;
+    margin-bottom   : 30vh          ;
 }
 .navbar [href]{
     color          : rgb(255, 255, 255);
-    text-decoration: none;
-    font-weight    : 400;
+    text-decoration: none           ;
+    font-weight    : 400            ;
 }
 .navbar ul{padding:0px;}
 .navButtons{
-    display        : flex;
-    align-items    : center;
-    width          : 100%;
-    margin         : 0px;
-    flex-wrap      : wrap;
-    justify-content: space-around;
-    align-items    : stretch;
-    min-height     : 60px;
+    display        : flex           ;
+    align-items    : center         ;
+    width          : 100%           ;
+    margin         : 0px            ;
+    flex-wrap      : wrap           ;
+    justify-content: space-around   ;
+    align-items    : stretch        ;
+    min-height     : 60px           ;
 }
-.navButtons p               {margin: 0px;}
-.navButtons a.current       {font-weight: 600;}
-.navButtons> li a.current   {background-color: var(--Col_MainLight);}
-.navButtons> li a:hover     {background-color: var(--Col_Main);}
+.navButtons p               {   margin: 0px;        }
+.navButtons a.current       {   font-weight: 600;   }
+.navButtons> li a.current   {   background-color: var(--Col_MainLight); }
+.navButtons> li a:hover     {   background-color: var(--Col_Main);      }
 .navElement{
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    flex-wrap      : wrap;
-    align-items    : stretch;
+    display        : flex       ;
+    align-items    : center     ;
+    justify-content: center     ;
+    flex-wrap      : wrap       ;
+    align-items    : stretch    ;
 }
 .buttonTXT  {   display : none;    padding-left: 10px   }
 .icon{
-    font-size      : 2rem;
-    padding-bottom : 10px;
-    padding-top    : 10px;
+    font-size      : 2rem       ;
+    padding-bottom : 10px       ;
+    padding-top    : 10px       ;
 }
 nav         {   align-items: stretch;   flex: 0 100%;   }
 nav li{
-    list-style     : none;
-    line-height    : 2em;
-    font-weight    : 600;
-    display        : flex;
-    align-items    : stretch;
+    list-style     : none       ;
+    line-height    : 2em        ;
+    font-weight    : 600        ;
+    display        : flex       ;
+    align-items    : stretch    ;
 }
 nav li a{
-    padding-right  : 15px;
-    padding-left   : 15px;
-    display        : flex;
-    align-items    : center;
+    padding-right  : 15px       ;
+    padding-left   : 15px       ;
+    display        : flex       ;
+    align-items    : center     ;
 }/* NAVBAR>>______________________________________________________________ */
 
 /* Video<<______________________________________________________________ */
 .videoContainer{
-    top            : 0;
-    left           : 0;
-    width          : 100%;
-    height         : 100vh;
-    overflow       : hidden;
+    top            : 0          ;
+    left           : 0          ;
+    width          : 100%       ;
+    height         : 100vh      ;
+    overflow       : hidden     ;
 }
 .panorama>source    {   object-fit: cover;    z-index: -1;   }
 .panorama{
-    min-width             : 100%;
-    min-height            : 100%;
-    position              : relative;
-    top                   : 50%;
-    left                  : 50%;
-    transform             : translateX(-50%) translateY(-50%);
-    z-index               : -1;
-    background-image      : url("../Videos/PanoramaFallback.png");
-    background-size       : 100% 100%;
-    background-position-x : 50%;
-    background-position-y : 50%;
+    min-width             : 100%        ;
+    min-height            : 100%        ;
+    position              : relative    ;
+    top                   : 50%         ;
+    left                  : 50%         ;
+    transform             : translateX(-50%) translateY(-50%)       ;
+    z-index               : -1          ;
+    background-image      : url("../Videos/PanoramaFallback.png")   ;
+    background-size       : 100% 100%   ;
+    background-position-x : 50%         ;
+    background-position-y : 50%         ;
 }/* Video>>______________________________________________________________ */
 
 /* Slogan<<______________________________________________________________ */
 #logoL{
-    object-fit      : contain;
-    width           : 100%;
-    height          : 100%;
-    max-width       : 80vh;
+    object-fit      : contain       ;
+    width           : 100%          ;
+    height          : 100%          ;
+    max-width       : 80vh          ;
 }
 #sloganBCK{
-    position        : absolute;
-    top             : 0;
-    left            : 0;
-    height          : 100vh;
-    font-size       : 1.7em;
-    letter-spacing  : 0.15em;
-    width           : 100%;
-    mix-blend-mode  : overlay;
+    position        : absolute      ;
+    top             : 0             ;
+    left            : 0             ;
+    height          : 100vh         ;
+    width           : 100%          ;
+    mix-blend-mode  : overlay       ;
 }
 #slogan{
-    position:       absolute;
-    top             : 0;
-    left            : 0;
-    height          : 100vh;
-    font-size       : 1.7em;
-    letter-spacing  : 0.15em;
-    text-align      : center;
-    margin-bottom   : 5vw;
-    width           : 100%;
+    position:       absolute        ;
+    top             : 0             ;
+    left            : 0             ;
+    height          : 100vh         ;
+    width           : 100%          ;
+    font-size       : 1.7rem        ;
+    letter-spacing  : 0.15rem       ;
+    text-align      : center        ;
 }
 #slogan div p               {   margin: 0px;    }
 #slogan div p:nth-child(2)  {   border-radius: 70px 5px;   padding: 5px 4vw;   }
 #Arrow{
-    position: relative;
-    top:30vh;
-    width: 30px;
+    position:   relative    ;
+    top:        30vh        ;
+    width:      30px        ;
 }
 /* Slogan>>______________________________________________________________ */
 
 /* TITLES>>______________________________________________________________ */
-#blocTitle      {   margin-bottom: 30vh;   min-height: 300px;  }
-#blocTitle p    {   width      :   95%; }
-.colorLine          {   height :   15vw;   min-height: 100px;  }
-.colorLine>div      {   width  :   25%; }
-.colorLineNav       {   height :   5px; }
-.colorLineNav>div   {   width  :   25%; }
+#blocTitle          {   margin-bottom: 30vh;   min-height: 300px;  }
+#blocTitle p        {   width  :   95%;   }
+.colorLine          {   height :   15vw;       min-height: 100px;  }
+.colorLine>div      {   width  :   25%;   }
+.colorLineNav       {   height :   5px;   }
+.colorLineNav>div   {   width  :   25%;   }
 
 h1{
-    font-size       : 1.8em;
-    letter-spacing  : 0.1em;
-    text-align      : center;
-    font-weight     : 500;
-    text-transform  : uppercase;
-    line-height     : 2.5rem;
+    font-size       : 1.8em         ;
+    letter-spacing  : 0.1em         ;
+    text-align      : center        ;
+    font-weight     : 500           ;
+    text-transform  : uppercase     ;
+    line-height     : 2.5rem        ;
 }
 h2{
-    font-family     : 'Baloo Paaji 2', cursive;
-    font-weight     : 400;
-    font-size       : 1.4em;
-    letter-spacing  : 0.05em;
-    margin-top      : 10px;
-    margin-bottom   : 10px;
-    text-transform  : uppercase;
-    line-height     : 1.8rem;
+    font-family     : 'Baloo Paaji 2', cursive  ;
+    font-weight     : 400                       ;
+    font-size       : 1.4em                     ;
+    letter-spacing  : 0.05em                    ;
+    margin-top      : 10px                      ;
+    margin-bottom   : 10px                      ;
+    text-transform  : uppercase                 ;
+    line-height     : 1.8rem                    ;
 }
 
 /* IMAGES>>______________________________________________________________ */
-.cover1   {  background-image: url("../Images/accueil/fullsize/meteo.jpg");  }
+.cover1     {   background-image: url(  "../Images/accueil/fullsize/meteo.jpg"            );  }
 .img-cover{
-    background-position: center;
-    background-size    : cover;
-    align-self         : stretch;
+    background-position: center     ;
+    background-size    : cover      ;
+    align-self         : stretch    ;
 }
-.img-cover a    {   display: block;     height : 100%           }
-.loopBox        {   display:flex;       align-items: center;    }
+.img-cover a    {   display: block  ;     height : 100%          }
+.loopBox        {   display: flex   ;     align-items: center;   }
 
 /* lieux */
-.lieux1     {   background-image:  url("../Images/lieux/puydedome/PuyLarge.jpg");           }
-.lieux2     {   background-image:  url("../Images/lieux/chainedespuys/chaineLarge.jpg");    }
-.lieux3     {   background-image:  url("../Images/lieux/cathedrale/CathedraleLarge.jpg");   }
-.lieux4     {   background-image:  url("../Images/lieux/vulcania/vulcaniaLarge.jpg");       }
-.lieux5     {   background-image:  url("../Images/lieux/lacdeguery/gueryLarge.jpg");        }
-.lieux6     {   background-image:  url("../Images/lieux/grottepierre/grotteLarge.jpg");     }
-.lieux7     {   background-image:  url("../Images/lieux/superbesse/SuperBesseLarge.jpg");   }
-.lieux8     {   background-image:  url("../Images/lieux/gergovie/GergovieLarge.jpg");       }
-.lieux9     {   background-image:  url("../Images/lieux/lacPavin/PavinLarge.jpg");          }
-.lieux10    {   background-image:  url("../Images/lieux/murol/MurolLarge.jpg");             }
+.lieux1     {   background-image:  url(  "../Images/lieux/puydedome/PuyLarge.jpg"         );  }
+.lieux2     {   background-image:  url(  "../Images/lieux/chainedespuys/chaineLarge.jpg"  );  }
+.lieux3     {   background-image:  url(  "../Images/lieux/cathedrale/CathedraleLarge.jpg" );  }
+.lieux4     {   background-image:  url(  "../Images/lieux/vulcania/vulcaniaLarge.jpg"     );  }
+.lieux5     {   background-image:  url(  "../Images/lieux/lacdeguery/gueryLarge.jpg"      );  }
+.lieux6     {   background-image:  url(  "../Images/lieux/grottepierre/grotteLarge.jpg"   );  }
+.lieux7     {   background-image:  url(  "../Images/lieux/superbesse/SuperBesseLarge.jpg" );  }
+.lieux8     {   background-image:  url(  "../Images/lieux/gergovie/GergovieLarge.jpg"     );  }
+.lieux9     {   background-image:  url(  "../Images/lieux/lacPavin/PavinLarge.jpg"        );  }
+.lieux10    {   background-image:  url(  "../Images/lieux/murol/MurolLarge.jpg"           );  }
 
 /* SECTIONS>>______________________________________________________________ */
 .secTopBar{
-    height          : 100px;
-    text-align      : left;
-    align-items     : center;
+    height          : 100px     ;
+    text-align      : left      ;
+    align-items     : center    ;
 }
 .secTopBarR{
-    height          : 100%;
-    width           : 5vw;
-    max-width       : 100px;
-    margin-right    : 20px;
+    height          : 100%      ;
+    width           : 5vw       ;
+    max-width       : 100px     ;
+    margin-right    : 20px      ;
 }
+
 .secPost    {   justify-content: space-between;   align-items: center;   }
 
-.sec        {   margin-bottom:  30vh; }
+.sec        {   margin-bottom:  30vh;   }
 
-.post       {   flex:       0 60%;    min-height: 300px;   }
+.post       {   flex:     0 60%;    min-height: 300px;   }
 
-.post>div   {   padding:    30px 5vw;   }
-.postillu   {   flex:       0 40%;    min-height: 300px;   }
-.postillu>a {   display:    block;    width:      100%;    }
+.post>div   {   padding:  30px 5vw;                      }
+
+.postillu   {   flex:     0 40%;    min-height: 300px;   }
+
+.postillu>a {   display:  block;    width:      100%;    }
+
 .postillu>a:hover{
-    background-image    :    url("../Images/loupe.png");
-    background-repeat   :    no-repeat;
-    background-position :    center ;
+    background-image    :    url("../Images/loupe.png") ;
+    background-repeat   :    no-repeat                  ;
+    background-position :    center                     ;
 }
 .postillu>div img{
-    box-sizing: border-box;
-    padding   : 30px 5vw;
-    object-fit: contain;
-    width     : 100%;
-    height    : 100%;
+    box-sizing  : border-box  ;
+    padding     : 30px 5vw    ;
+    object-fit  : contain     ;
+    width       : 100%        ;
+    height      : 100%        ;
 }
 
 /* RESPONSIVE<<_________________________________________________________ */
 
 /* small<<______________________________ */
-@media (    min-width   : 650px   ){
+@media (    min-width   : 650px   ) {
 
 }
 
 
 /* medium<<______________________________ */
-@media (    min-width   : 900px   ){
+@media (    min-width   : 900px   ) {
 
         .container  {   width: 85%;   max-width:  1200px;   }
         .buttonTXT  {   display: inline;    }
         .icon       {
-            font-size       : 1rem;
-            padding-bottom  : 0px;
-            padding-top     : 0px;
+            font-size       : 1rem  ;
+            padding-bottom  : 0px   ;
+            padding-top     : 0px   ;
         }
 
 }
 
 
 /* large<<______________________________ */
-@media (    min-width   : 1190px){
+@media (    min-width   : 1190px  ) {
 
         .container  {   width: 80%;   max-width:  1200px;   }
 
