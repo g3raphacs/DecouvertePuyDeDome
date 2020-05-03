@@ -9,42 +9,50 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-        <!-- NAVBAR <<____________________________________________________________________________________ -->
+        <div class="back"></div>
         <header>
-                <div id="navbar" class="shadow">
-                        <div class="container" id="navElement">
-                            <p id="logo" class="m0"><img src="Images/logo.png" alt="logo Découverte Puy de Dôme" width="526" height="141"></p>
-                            <nav class="flex">
-                                <ul id="navButtons">
-                                    <li><a href="index.html"><p class="icon icon-Accueil"><span class="buttonTXT">Accueil</span></p></a></li>
-                                    <li><a href="lieux_incontournables.html"><p class="icon icon-Lieux"><span class="buttonTXT">Les lieux incontournables</span></p></a></li>
-                                    <li><a href="marches_et_foires.html"><p class="icon icon-foires"><span class="buttonTXT">Marchés et foires</span></p></a></li>
-                                    <li><a class="current" href="actus.html"><p class="icon icon-news"><span class="buttonTXT">Actualités</span></p></a></li>
-                                </ul>
-                            </nav>
+            <!-- Video -->
+                <div class="videoContainer">
+                    <video class="panorama" autoplay loop muted>
+                        <source src="Videos/panorama.mp4" type="video/mp4">
+                    </video>
+                </div>
+            <!-- Slogan -->
+                <div ID="sloganBCK" class="BCKgradBlue"></div>
+                <div id="slogan" class="flexCenterCenter">
+                        <div class="container">
+                            <p><img id="logoL" src="Images/logoLarge.png" alt="" width="1107" height="308"></p>
+                            <p class="TXTwhite fontSec fSize24 shadow BCKDark"><strong>La nature est un Luxe !</strong></p>
+                            <p><img id="Arrow" src="Images/fleche.svg" alt="" width="63" height="19"></p>
                         </div>
                 </div>
-            <!-- slogan -->
-            <div id="slogan" class="flexCenterCenter BCKgradBlue">
-                    <p class="container"><span class="TXTdark fSize120 txtshadow">Puy de Dôme</span><br><span class="TXTwhite fontSec fSize48 shadowLarge BCKmain"><strong>La nature est un Luxe !</strong></span></p>
-            </div>
-            <div class="flecheContain">
-                <div class="fleche p0"><img src="Images/fleche3.svg" alt=""></div>
-            </div>
-        </header>
-        <!-- NAVBAR >>____________________________________________________________________________________ -->
         
+        <main>
 
-    <main>
-
+                <div class="colorLine flex"> <div class="BCKmain"></div><div class="BCKsec"></div><div class="BCKcomp"></div><div class="BCKseclight"></div></div>
+                <!-- Load Position -->
+                <a id="LOADpos"></a>
+                <!-- NAVBAR 2<<____________________________________________________________________________________ -->
+                <div id="navbar2" class="navbar BCKDark shadow">
+                    <div class="colorLineNav flex"> <div class="BCKmain"></div><div class="BCKsec"></div><div class="BCKcomp"></div><div class="BCKseclight"></div></div>
+                    <div class="container navElement">
+                        <nav class="flex">
+                            <ul class="navButtons">
+                                <li><a href="index.html#LOADpos"><p class="icon icon-Accueil"><span class="buttonTXT">Accueil</span></p></a></li>
+                                <li><a href="lieux_incontournables.html#LOADpos"><p class="icon icon-Lieux"><span class="buttonTXT">Les lieux incontournables</span></p></a></li>
+                                <li><a href="marches_et_foires.html#LOADpos"><p class="icon icon-foires"><span class="buttonTXT">Marchés et foires</span></p></a></li>
+                                <li><a class="current" href="actus.html#LOADpos"><p class="icon icon-news"><span class="buttonTXT">Actualités</span></p></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- NAVBAR 2>>____________________________________________________________________________________ -->
                 <!-- TITRE<<____________________________________________________________________________________ -->
-                
-                <header id="blocTitle">
-                    <div class="containbox"><h1 class="container icon-news TXTwhite"> L'actualité du Puy-de-Dôme</h1></div>
+                <header id="blocTitle" class="BCKmain flexCenterCenter shadow">
+                    <div class="container"><h1 class=" TXTwhite m0">L'actualité du Puy-de-Dôme</h1></div>
                 </header>
-                <div class="colorLine shadow flex"> <div class="BCKmain"></div><div class="BCKsec"></div><div class="BCKcomp"></div><div class="BCKseclight"></div></div>
-                
                 <!-- TITRE>>____________________________________________________________________________________ -->
+
 
                 <div class="container">
                     <section class="sec actu">
@@ -117,6 +125,6 @@
         <div class="container"><p><a href="mailto:decouvertepuydedome@gmail.com">Contactez-nous par mail</a></p></div>
     </footer>
 
-
+    <div style="height:9999px;"></div>
 </body>
 </html>

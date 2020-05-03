@@ -172,11 +172,12 @@ p strong{font-weight: 900;}
 .rotLeft    { transform : rotate(-3deg);}
 
 /* NAVBAR<<______________________________________________________________ */
+
 .navbar{
     position        : sticky;
     top             : 0;
     z-index         : 2;
-    margin-bottom   : 80vh;
+    margin-bottom   : 30vh;
 }
 .navbar [href]{
     color          : rgb(255, 255, 255);
@@ -188,7 +189,7 @@ p strong{font-weight: 900;}
     display        : flex;
     align-items    : center;
     width          : 100%;
-    margin         : 0em;
+    margin         : 0px;
     flex-wrap      : wrap;
     justify-content: space-around;
     align-items    : stretch;
@@ -284,14 +285,20 @@ nav li a{
     width           : 100%;
 }
 #slogan div p   {margin: 0px;}
-#slogan div p:last-child{
+#slogan div p:nth-child(2){
     border-radius   : 70px 5px;
     padding         : 5px 4vw;
-}/* Slogan>>______________________________________________________________ */
+}
+#Arrow{
+    position: relative;
+    top:30vh;
+    width: 30px;
+}
+/* Slogan>>______________________________________________________________ */
 
 
 /* TITLES>>______________________________________________________________ */
-#blocTitle      {margin   : 50vh 0px; min-height: 300px;}
+#blocTitle      {margin-bottom: 30vh; min-height: 300px;}
 #blocTitle p    {width    : 95%;}
 
 .colorLine{
@@ -363,12 +370,12 @@ h2{
     justify-content : space-between;
     align-items     : center;
 }
-.sec{margin-bottom  : 50vh;}
+.sec{margin-bottom  : 30vh;}
 
-.post       {flex      : 0 60%;}
+.post       {flex      : 0 60%; min-height: 300px;}
 .post>div   {padding   : 30px 5vw;}
 
-.postillu   {flex: 0 40%;}
+.postillu   {flex: 0 40%; min-height: 300px;}
 .postillu>a{
     display: block;
     width: 100%;
