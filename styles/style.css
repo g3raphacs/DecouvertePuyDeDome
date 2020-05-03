@@ -11,92 +11,92 @@
     font-style : normal;
 }
 [class*='icon-']:before{
-	display                : inline-block;
-	font-family            : 'Glyphter';
-	font-style             : normal;
-	font-weight            : normal;
-	line-height            : 1;
-	-webkit-font-smoothing : antialiased;
-	-moz-osx-font-smoothing: grayscale
+	display                     : inline-block;
+	font-family                 : 'Glyphter';
+	font-style                  : normal;
+	font-weight                 : normal;
+	line-height                 : 1;
+	-webkit-font-smoothing      : antialiased;
+	-moz-osx-font-smoothing     : grayscale
 }
-.icon-foires:before {content:   '\0041';}
-.icon-Accueil:before{content:   '\0042';}
-.icon-Lieux:before  {content:   '\0043';}
-.icon-news:before   {content:   '\0044';}
-.icon-mail:before   {content:   '\0045';}
+.icon-foires:before     {   content:   '\0041';     }
+.icon-Accueil:before    {   content:   '\0042';     }
+.icon-Lieux:before      {   content:   '\0043';     }
+.icon-news:before       {   content:   '\0044';     }
+.icon-mail:before       {   content:   '\0045';     }
 /* Font Icons>>______________________________________________________________ */
 
 /* font types */
-.fontSec    {font-family    : 'Baloo Paaji 2', cursive;}
-.fontI      {font-style     : italic;}
-.fontB      {font-weight    : bold;}
-.fontSB     {font-weight    : 600;}
+.fontSec    {   font-family    : 'Baloo Paaji 2', cursive;   }
+.fontI      {   font-style     : italic;    }
+.fontB      {   font-weight    : bold;      }
+.fontSB     {   font-weight    : 600;       }
 /* font sizes */
-.fSize220   { font-size     : 13.75rem}
-.fSize120   { font-size     : 7.5rem}
-.fSize48    { font-size     : 3rem}
-.fSize36    { font-size     : 2.25rem}
-.fSize34    { font-size     : 2.13rem}
-.fSize24    { font-size     : 1.5rem}
-.fSize20    { font-size     : 1.25rem}
-.fSize18    { font-size     : 1.13rem}
-.fSize16    { font-size     : 1rem}
-.fSize15    { font-size     : 0.94rem}
-.fSize14    { font-size     : 0.88rem}
-.fSize13    { font-size     : 0.81rem}
-.fSize12    { font-size     : 0.75rem}
+.fSize220   {   font-size      : 13.75rem   }
+.fSize120   {   font-size      : 7.5rem     }
+.fSize48    {   font-size      : 3rem       }
+.fSize36    {   font-size      : 2.25rem    }
+.fSize34    {   font-size      : 2.13rem    }
+.fSize24    {   font-size      : 1.5rem     }
+.fSize20    {   font-size      : 1.25rem    }
+.fSize18    {   font-size      : 1.13rem    }
+.fSize16    {   font-size      : 1rem       }
+.fSize15    {   font-size      : 0.94rem    }
+.fSize14    {   font-size      : 0.88rem    }
+.fSize13    {   font-size      : 0.81rem    }
+.fSize12    {   font-size      : 0.75rem    }
 /* font positioning */
-.fspace     {letter-spacing : 2rem;}
-.TXTleft    {text-align     : center;}
-.TXTcenter  {text-align     : center;}
-.TXTjustif  {text-align     : justify;}
-.TXTlineL   {line-height    : 2rem;}
-.TXTlineXL  {line-height    : 3rem;}
+.fspace     {   letter-spacing : 2rem;      }
+.TXTleft    {   text-align     : center;    }
+.TXTcenter  {   text-align     : center;    }
+.TXTjustif  {   text-align     : justify;   }
+.TXTlineL   {   line-height    : 2rem;      }
+.TXTlineXL  {   line-height    : 3rem;      }
 /*FONTS>>____________________________________________________________________________________*/
 
 /*COLOR VALUES<<____________________________________________________________________________________*/
 /* @colors */
 :root{
-    --Col_MainLight: #416583;
-    --Col_Main     : #214a5a;
-    --Col_Comp     : #C7F464;
-    --Col_Sec      : #4ECDC4;
-    --Col_SecLight : #FFA04A;
-    --Col_Grad1    : rgba(255, 161, 74, 0.685);
-    --Col_Grad2    : #a2fff4;
-    --Col_Black    : #739bb9;
-    --Col_White_a95: rgba(255, 255, 255, 0.85);
-    --Col_Shadow   : #214a5a3f;
+    --Col_MainLight             :        #416583;
+    --Col_Main                  :        #214a5a;
+    --Col_Comp                  :        #C7F464;
+    --Col_Sec                   :        #4ECDC4;
+    --Col_SecLight              :        #FFA04A;
+    --Col_Grad1                 :        rgba(255, 161, 74, 0.685);
+    --Col_Grad2                 :        #a2fff4;
+    --Col_Black                 :        #739bb9;
+    --Col_White_a95             :        rgba(255, 255, 255, 0.85);
+    --Col_Shadow                :        #214a5a3f;
 }
 /* classes text */
-.TXTmain{color      :      var(--Col_Main);}
-.TXTcomp{color      :      var(--Col_Comp);}
-.TXTsec{color       :      var(--Col_Sec);}
-.TXTseclight{color  :      var(--Col_SecLight);}
-.TXTdark{color      :      var(--Col_Black);}
-.TXTmainlight{color :      var(--Col_MainLight);}
-.TXTwhite{color     :      white;}
+.TXTmain        {   color       :        var(--Col_Main);}
+.TXTcomp        {   color       :        var(--Col_Comp);}
+.TXTsec         {   color       :        var(--Col_Sec);}
+.TXTseclight    {   color       :        var(--Col_SecLight);}
+.TXTdark        {   color       :        var(--Col_Black);}
+.TXTmainlight   {   color       :        var(--Col_MainLight);}
+.TXTwhite       {   color       :        white;}
 
 /* classes background */
-.BCKmainLight{background-color: var(--Col_MainLight);}
-.BCKwhiteA{background-color   : var(--Col_White_a95);}
-.BCKmain{background-color     : var(--Col_Main);}
-.BCKsec{background-color      : var(--Col_Sec);}
-.BCKseclight{background-color : var(--Col_SecLight);}
-.BCKcomp{background-color     : var(--Col_Comp);}
-.BCKDark{background-color     : var(--Col_Black);}
+.BCKmainLight   {   background-color   : var(--Col_MainLight);  }
+.BCKwhiteA      {   background-color   : var(--Col_White_a95);  }
+.BCKmain        {   background-color   : var(--Col_Main);       }
+.BCKsec         {   background-color   : var(--Col_Sec);        }
+.BCKseclight    {   background-color   : var(--Col_SecLight);   }
+.BCKcomp        {   background-color   : var(--Col_Comp);       }
+.BCKDark        {   background-color   : var(--Col_Black);      }
 
 /* gradients */
-.BCKgradBlue{background-image: linear-gradient(45deg,var(--Col_Grad1),var(--Col_Main));}
+.BCKgradBlue    {   background-image   : linear-gradient(45deg,var(--Col_Grad1),var(--Col_Main));  }
 /* shadows */
-.shadow{box-shadow          : 0px 8px 6px   var(--Col_Shadow);}
-.shadowLarge{box-shadow     : 3px 3px 20px rgba(0, 0, 0, 0.164);}
-.shadowPost{box-shadow      : 3px 3px 10px rgba(10, 99, 117,0.25);}
-.txtshadow{text-shadow      : 3px 3px 4px   var(--Col_Shadow);}
+.shadow         {   box-shadow         : 0px 8px 6px    var(--Col_Shadow);          }
+.shadowLarge    {   box-shadow         : 3px 3px 20px   rgba(0, 0, 0, 0.164);     }
+.shadowPost     {   box-shadow         : 3px 3px 10px   rgba(10, 99, 117,0.25);   }
+.txtshadow      {   text-shadow        : 3px 3px 4px    var(--Col_Shadow);          }
 
 /* borders */
-.borderPostR{border-right   : 15px solid var(--Col_Comp);}
-.borderPostL{border-left    : 15px solid var(--Col_Comp);}
+.borderPostR    {   border-right   : 15px solid var(--Col_Comp);    }
+.borderPostL    {   border-left    : 15px solid var(--Col_Comp);    }
 
 /* lettrines */
 .lettrine::first-letter{
@@ -123,9 +123,9 @@
 /* Generic<<______________________________________________________________ */
 .back{
     position             : fixed;
-    width                :      100%;
-    height               :     150vh;
-    z-index              :    -1;
+    width                : 100%;
+    height               : 150vh;
+    z-index              : -1;
     background-image     : url("../Images/back.jpg");
     background-size      : cover;
 }
@@ -161,20 +161,21 @@ p strong{font-weight: 900;}
 }/* Containers>>______________________________________________________________ */
 
 /* Box Model<<______________________________________________________________ */
-.m0{margin:         0px;}
-.p0{padding:        0px;}
-.mp0{margin:        0px; padding: 0px;}
-.m0child *{margin:  0px;}
+.m0         {   margin:    0px;     }
+.p0         {   padding:   0px;     }
+.mp0        {   margin:    0px;     padding: 0px;   }
+.m0child   *{   margin:    0px;     }
 /* Box Model>>______________________________________________________________ */
 
 /* transforms */
-.rotRight   {transform  : rotate(3deg);}
-.rotLeft    { transform : rotate(-3deg);}
+.rotRight   {   transform : rotate(3deg);   }
+.rotLeft    {   transform : rotate(-3deg);  }
 
 /* NAVBAR<<______________________________________________________________ */
 
 .navbar{
     position        : sticky;
+    position: -webkit-sticky;
     top             : 0;
     z-index         : 2;
     margin-bottom   : 30vh;
@@ -206,22 +207,19 @@ p strong{font-weight: 900;}
     flex-wrap      : wrap;
     align-items    : stretch;
 }
-.buttonTXT  {display : none;padding-left: 10px}
+.buttonTXT  {   display : none;    padding-left: 10px   }
 .icon{
     font-size      : 2rem;
     padding-bottom : 10px;
     padding-top    : 10px;
 }
-nav{
-    align-items    : stretch;
-    flex           : 0 100%;
-}
+nav         {   align-items: stretch;   flex: 0 100%;   }
 nav li{
     list-style     : none;
     line-height    : 2em;
     font-weight    : 600;
     display        : flex;
-    align-items    : justify;
+    align-items    : stretch;
 }
 nav li a{
     padding-right  : 15px;
@@ -232,36 +230,33 @@ nav li a{
 
 /* Video<<______________________________________________________________ */
 .videoContainer{
-    top         : 0;
-    left        : 0;
-    width       : 100%;
-    height      : 100vh;
-    overflow    : hidden;
+    top            : 0;
+    left           : 0;
+    width          : 100%;
+    height         : 100vh;
+    overflow       : hidden;
 }
-.panorama>source{
-    object-fit  : cover;
-    z-index     : -1;
-}
+.panorama>source    {   object-fit: cover;    z-index: -1;   }
 .panorama{
-  min-width             : 100%;
-  min-height            : 100%;
-  position              : relative;
-  top                   : 50%;
-  left                  : 50%;
-  transform             : translateX(-50%) translateY(-50%);
-  z-index               : -1;
-  background-image      : url("../Videos/PanoramaFallback.png");
-  background-size       : 100% 100%;
-  background-position-x : 50%;
-  background-position-y : 50%;
+    min-width             : 100%;
+    min-height            : 100%;
+    position              : relative;
+    top                   : 50%;
+    left                  : 50%;
+    transform             : translateX(-50%) translateY(-50%);
+    z-index               : -1;
+    background-image      : url("../Videos/PanoramaFallback.png");
+    background-size       : 100% 100%;
+    background-position-x : 50%;
+    background-position-y : 50%;
 }/* Video>>______________________________________________________________ */
 
 /* Slogan<<______________________________________________________________ */
 #logoL{
-    object-fit  : contain;
-    width       : 100%;
-    height      : 100%;
-    max-width   : 80vh;
+    object-fit      : contain;
+    width           : 100%;
+    height          : 100%;
+    max-width       : 80vh;
 }
 #sloganBCK{
     position        : absolute;
@@ -284,11 +279,8 @@ nav li a{
     margin-bottom   : 5vw;
     width           : 100%;
 }
-#slogan div p   {margin: 0px;}
-#slogan div p:nth-child(2){
-    border-radius   : 70px 5px;
-    padding         : 5px 4vw;
-}
+#slogan div p               {   margin: 0px;    }
+#slogan div p:nth-child(2)  {   border-radius: 70px 5px;   padding: 5px 4vw;   }
 #Arrow{
     position: relative;
     top:30vh;
@@ -296,18 +288,13 @@ nav li a{
 }
 /* Slogan>>______________________________________________________________ */
 
-
 /* TITLES>>______________________________________________________________ */
-#blocTitle      {margin-bottom: 30vh; min-height: 300px;}
-#blocTitle p    {width    : 95%;}
-
-.colorLine{
-    height:     15vw;
-    min-height: 100px;
-}
-.colorLine>div      {width  :   25%;}
-.colorLineNav       {height :   5px;}
-.colorLineNav>div   {width  :   25%;}
+#blocTitle      {   margin-bottom: 30vh;   min-height: 300px;  }
+#blocTitle p    {   width      :   95%; }
+.colorLine          {   height :   15vw;   min-height: 100px;  }
+.colorLine>div      {   width  :   25%; }
+.colorLineNav       {   height :   5px; }
+.colorLineNav>div   {   width  :   25%; }
 
 h1{
     font-size       : 1.8em;
@@ -329,36 +316,32 @@ h2{
 }
 
 /* IMAGES>>______________________________________________________________ */
-.cover1   {background-image: url("../Images/accueil/fullsize/meteo.jpg");}
+.cover1   {  background-image: url("../Images/accueil/fullsize/meteo.jpg");  }
 .img-cover{
     background-position: center;
     background-size    : cover;
     align-self         : stretch;
 }
-.img-cover a{
-    display: block;
-    height : 100%
-}
-.loopBox    {display:flex ; align-items: center;}
+.img-cover a    {   display: block;     height : 100%           }
+.loopBox        {   display:flex;       align-items: center;    }
 
 /* lieux */
-.lieux1 {background-image:  url("../Images/lieux/puydedome/PuyLarge.jpg");}
-.lieux2 {background-image:  url("../Images/lieux/chainedespuys/chaineLarge.jpg");}
-.lieux3 {background-image:  url("../Images/lieux/cathedrale/CathedraleLarge.jpg");}
-.lieux4 {background-image:  url("../Images/lieux/vulcania/vulcaniaLarge.jpg");}
-.lieux5 {background-image:  url("../Images/lieux/lacdeguery/gueryLarge.jpg");}
-.lieux6 {background-image:  url("../Images/lieux/grottepierre/grotteLarge.jpg");}
-.lieux7 {background-image:  url("../Images/lieux/superbesse/SuperBesseLarge.jpg");}
-.lieux8 {background-image:  url("../Images/lieux/gergovie/GergovieLarge.jpg");}
-.lieux9 {background-image:  url("../Images/lieux/lacPavin/PavinLarge.jpg");}
-.lieux10{background-image:  url("../Images/lieux/murol/MurolLarge.jpg");}
+.lieux1     {   background-image:  url("../Images/lieux/puydedome/PuyLarge.jpg");           }
+.lieux2     {   background-image:  url("../Images/lieux/chainedespuys/chaineLarge.jpg");    }
+.lieux3     {   background-image:  url("../Images/lieux/cathedrale/CathedraleLarge.jpg");   }
+.lieux4     {   background-image:  url("../Images/lieux/vulcania/vulcaniaLarge.jpg");       }
+.lieux5     {   background-image:  url("../Images/lieux/lacdeguery/gueryLarge.jpg");        }
+.lieux6     {   background-image:  url("../Images/lieux/grottepierre/grotteLarge.jpg");     }
+.lieux7     {   background-image:  url("../Images/lieux/superbesse/SuperBesseLarge.jpg");   }
+.lieux8     {   background-image:  url("../Images/lieux/gergovie/GergovieLarge.jpg");       }
+.lieux9     {   background-image:  url("../Images/lieux/lacPavin/PavinLarge.jpg");          }
+.lieux10    {   background-image:  url("../Images/lieux/murol/MurolLarge.jpg");             }
 
 /* SECTIONS>>______________________________________________________________ */
 .secTopBar{
     height          : 100px;
     text-align      : left;
     align-items     : center;
-    background-color: var(--Col_Black);
 }
 .secTopBarR{
     height          : 100%;
@@ -366,20 +349,15 @@ h2{
     max-width       : 100px;
     margin-right    : 20px;
 }
-.secPost{
-    justify-content : space-between;
-    align-items     : center;
-}
-.sec{margin-bottom  : 30vh;}
+.secPost    {   justify-content: space-between;   align-items: center;   }
 
-.post       {flex      : 0 60%; min-height: 300px;}
-.post>div   {padding   : 30px 5vw;}
+.sec        {   margin-bottom:  30vh; }
 
-.postillu   {flex: 0 40%; min-height: 300px;}
-.postillu>a{
-    display: block;
-    width: 100%;
-}
+.post       {   flex:       0 60%;    min-height: 300px;   }
+
+.post>div   {   padding:    30px 5vw;   }
+.postillu   {   flex:       0 40%;    min-height: 300px;   }
+.postillu>a {   display:    block;    width:      100%;    }
 .postillu>a:hover{
     background-image    :    url("../Images/loupe.png");
     background-repeat   :    no-repeat;
@@ -388,35 +366,38 @@ h2{
 .postillu>div img{
     box-sizing: border-box;
     padding   : 30px 5vw;
-    display   : box;
     object-fit: contain;
     width     : 100%;
     height    : 100%;
 }
 
 /* RESPONSIVE<<_________________________________________________________ */
+
 /* small<<______________________________ */
-@media (min-width:650px){
+@media (    min-width   : 650px   ){
 
 }
+
+
 /* medium<<______________________________ */
-@media (min-width:900px){
-    .buttonTXT  {display: inline;}
-    .icon{
-        font-size     : 1rem;
-        padding-bottom: 0px;
-        padding-top   : 0px;
-    }
-    .container{
-        width         : 85%;
-        max-width     : 1200px;
-    }
+@media (    min-width   : 900px   ){
+
+        .container  {   width: 85%;   max-width:  1200px;   }
+        .buttonTXT  {   display: inline;    }
+        .icon       {
+            font-size       : 1rem;
+            padding-bottom  : 0px;
+            padding-top     : 0px;
+        }
 
 }
+
+
 /* large<<______________________________ */
-@media (min-width:1190px){
-    .container{
-        width         : 80%;
-        max-width     : 1200px;
-    }
-}/* RESPONSIVE>>_________________________________________________________ */
+@media (    min-width   : 1190px){
+
+        .container  {   width: 80%;   max-width:  1200px;   }
+
+}
+
+/* RESPONSIVE>>_________________________________________________________ */
