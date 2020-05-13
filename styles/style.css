@@ -1,5 +1,5 @@
-/*FONTS<<____________________________________________________________________________________*/
-/* Font Icons<<______________________________________________________________ */
+/*FONTS<<___________________________________________________________________________*/
+/* Font Icons<<____________________________________________________________________ */
 @font-face {
     font-family: 'Glyphter';
     src :       url('../fonts/Glyphter.eot'             );
@@ -19,12 +19,12 @@
 	-webkit-font-smoothing      : antialiased   ;
 	-moz-osx-font-smoothing     : grayscale     ;
 }
-.icon-foires:before     {   content:   '\0041';     }
-.icon-Accueil:before    {   content:   '\0042';     }
-.icon-Lieux:before      {   content:   '\0043';     }
-.icon-news:before       {   content:   '\0044';     }
-.icon-mail:before       {   content:   '\0045';     }
-/* Font Icons>>______________________________________________________________ */
+.icon-foires:before     {   content:   '\0041'  ;   }
+.icon-Accueil:before    {   content:   '\0042'  ;   }
+.icon-Lieux:before      {   content:   '\0043'  ;   }
+.icon-news:before       {   content:   '\0044'  ;   }
+.icon-mail:before       {   content:   '\0045'  ;   }
+/* Font Icons>>_____________________________________________________________________ */
 
 /* font types */
 .fontSec    {   font-family    : 'Baloo Paaji 2', cursive;   }
@@ -52,9 +52,9 @@
 .TXTjustif  {   text-align     : justify;   }
 .TXTlineL   {   line-height    : 2rem;      }
 .TXTlineXL  {   line-height    : 3rem;      }
-/*FONTS>>____________________________________________________________________________________*/
+/*FONTS>>_______________________________________________________________________________*/
 
-/*COLOR VALUES<<____________________________________________________________________________________*/
+/*COLOR VALUES<<________________________________________________________________________*/
 /* @colors */
 :root{
     --Col_MainLight             :        #416583                    ;
@@ -107,9 +107,9 @@
     color       : var(--Col_SecLight)  ;
     margin-right: 15px                 ;
 }
-/*COLOR VALUES>>____________________________________________________________________________________*/
+/*COLOR VALUES>>____________________________________________________________ */
 
-/*FLEX<<____________________________________________________________________________________*/
+/*FLEX<<____________________________________________________________________ */
 .flex   {   display: flex;  }
 .flexCenterCenter{
     display         : flex      ;
@@ -118,9 +118,9 @@
 }
 .flexReverse    {   flex-direction: row-reverse;    }
 
-/*FLEX>>____________________________________________________________________________________*/
+/*FLEX>>____________________________________________________________________ */
 
-/* Generic<<______________________________________________________________ */
+/* Generic<<________________________________________________________________ */
 .back{
     position             : fixed                    ;
     width                : 100%                     ;
@@ -150,7 +150,7 @@ main{
 p strong    {   font-weight     : 900;   }
 
 [href]      {   text-decoration : none;  }
-/* Generic>>______________________________________________________________ */
+/* Generic>>_________________________________________________________________ */
 
 /* Containers<<______________________________________________________________ */
 .container{
@@ -158,20 +158,20 @@ p strong    {   font-weight     : 900;   }
     margin          : 0 auto    ;
     padding-left    : 10px      ;
     padding-right   : 10px      ;
-}/* Containers>>______________________________________________________________ */
+}/* Containers>>_____________________________________________________________ */
 
-/* Box Model<<______________________________________________________________ */
+/* Box Model<<_______________________________________________________________ */
 .m0         {   margin:    0px;     }
 .p0         {   padding:   0px;     }
 .mp0        {   margin:    0px;     padding: 0px;   }
 .m0child   *{   margin:    0px;     }
-/* Box Model>>______________________________________________________________ */
+/* Box Model>>_______________________________________________________________ */
 
 /* transforms */
 .rotRight   {   transform : rotate(3deg);   }
 .rotLeft    {   transform : rotate(-3deg);  }
 
-/* NAVBAR<<______________________________________________________________ */
+/* NAVBAR<<__________________________________________________________________ */
 
 .navbar{
     position        : sticky        ;
@@ -181,60 +181,60 @@ p strong    {   font-weight     : 900;   }
     margin-bottom   : 30vh          ;
 }
 .navbar [href]{
-    color          : rgb(255, 255, 255);
-    text-decoration: none           ;
-    font-weight    : 400            ;
+    color           : rgb(255, 255, 255);
+    text-decoration : none          ;
+    font-weight     : 400           ;
 }
 .navbar ul{padding:0px;}
 .navButtons{
-    display        : flex           ;
-    align-items    : center         ;
-    width          : 100%           ;
-    margin         : 0px            ;
-    flex-wrap      : wrap           ;
-    justify-content: space-around   ;
-    align-items    : stretch        ;
-    min-height     : 60px           ;
+    display         : flex          ;
+    align-items     : center        ;
+    width           : 100%          ;
+    margin          : 0px           ;
+    flex-wrap       : wrap          ;
+    justify-content : space-around  ;
+    align-items     : stretch       ;
+    min-height      : 60px          ;
 }
 .navButtons p               {   margin: 0px;        }
 .navButtons a.current       {   font-weight: 600;   }
 .navButtons> li a.current   {   background-color: var(--Col_MainLight); }
 .navButtons> li a:hover     {   background-color: var(--Col_Main);      }
 .navElement{
-    display        : flex       ;
-    align-items    : center     ;
-    justify-content: center     ;
-    flex-wrap      : wrap       ;
-    align-items    : stretch    ;
+    display         : flex          ;
+    align-items     : center        ;
+    justify-content : center        ;
+    flex-wrap       : wrap          ;
+    align-items     : stretch       ;
 }
 .buttonTXT  {   display : none;    padding-left: 10px   }
 .icon{
-    font-size      : 2rem       ;
-    padding-bottom : 10px       ;
-    padding-top    : 10px       ;
+    font-size       : 2rem          ;
+    padding-bottom  : 10px          ;
+    padding-top     : 10px          ;
 }
 nav         {   align-items: stretch;   flex: 0 100%;   }
 nav li{
-    list-style     : none       ;
-    line-height    : 2em        ;
-    font-weight    : 600        ;
-    display        : flex       ;
-    align-items    : stretch    ;
+    list-style      : none          ;
+    line-height     : 2em           ;
+    font-weight     : 600           ;
+    display         : flex          ;
+    align-items     : stretch       ;
 }
 nav li a{
-    padding-right  : 15px       ;
-    padding-left   : 15px       ;
-    display        : flex       ;
-    align-items    : center     ;
-}/* NAVBAR>>______________________________________________________________ */
+    padding-right   : 15px          ;
+    padding-left    : 15px          ;
+    display         : flex          ;
+    align-items     : center        ;
+}/* NAVBAR>>_____________________________________________________________ */
 
-/* Video<<______________________________________________________________ */
+/* Video<<_______________________________________________________________ */
 .videoContainer{
-    top            : 0          ;
-    left           : 0          ;
-    width          : 100%       ;
-    height         : 100vh      ;
-    overflow       : hidden     ;
+    top             : 0             ;
+    left            : 0             ;
+    width           : 100%          ;
+    height          : 100vh         ;
+    overflow        : hidden        ;
 }
 .panorama>source    {   object-fit: cover;    z-index: -1;   }
 .panorama{
@@ -243,9 +243,9 @@ nav li a{
     position              : relative    ;
     top                   : 50%         ;
     left                  : 50%         ;
-    transform             : translateX(-50%) translateY(-50%)       ;
+    transform             : translateX(-50%) translateY(-50%)           ;
     z-index               : -1          ;
-    background-image      : url("../Videos/PanoramaFallback.png")   ;
+    background-image      : url(  "../Videos/PanoramaFallback.png"  )   ;
     background-size       : 100% 100%   ;
     background-position-x : 50%         ;
     background-position-y : 50%         ;
@@ -267,7 +267,7 @@ nav li a{
     mix-blend-mode  : overlay       ;
 }
 #slogan{
-    position:       absolute        ;
+    position        : absolute      ;
     top             : 0             ;
     left            : 0             ;
     height          : 100vh         ;
@@ -279,9 +279,9 @@ nav li a{
 #slogan div p               {   margin: 0px;    }
 #slogan div p:nth-child(2)  {   border-radius: 70px 5px;   padding: 5px 4vw;   }
 #Arrow{
-    position:   relative    ;
-    top:        30vh        ;
-    width:      30px        ;
+    position    :   relative    ;
+    top         :   30vh        ;
+    width       :   30px        ;
 }
 /* Slogan>>______________________________________________________________ */
 
@@ -315,9 +315,9 @@ h2{
 /* IMAGES>>______________________________________________________________ */
 .cover1     {   background-image: url(  "../Images/accueil/fullsize/meteo.jpg"            );  }
 .img-cover{
-    background-position: center     ;
-    background-size    : cover      ;
-    align-self         : stretch    ;
+    background-position : center    ;
+    background-size     : cover     ;
+    align-self          : stretch   ;
 }
 .img-cover a    {   display: block  ;     height : 100%          }
 .loopBox        {   display: flex   ;     align-items: center;   }
@@ -334,7 +334,7 @@ h2{
 .lieux9     {   background-image:  url(  "../Images/lieux/lacPavin/PavinLarge.jpg"        );  }
 .lieux10    {   background-image:  url(  "../Images/lieux/murol/MurolLarge.jpg"           );  }
 
-/* SECTIONS>>______________________________________________________________ */
+/* SECTIONS>>_____________________________________________________________ */
 .secTopBar{
     height          : 100px     ;
     text-align      : left      ;
@@ -347,22 +347,17 @@ h2{
     margin-right    : 20px      ;
 }
 
-.secPost    {   justify-content: space-between;   align-items: center;   }
-
-.sec        {   margin-bottom:  30vh;   }
-
-.post       {   flex:     0 60%;    min-height: 300px;   }
-
-.post>div   {   padding:  30px 5vw;                      }
-
-.postillu   {   flex:     0 40%;    min-height: 300px;   }
-
-.postillu>a {   display:  block;    width:      100%;    }
+.secPost    {   justify-content :  space-between;   align-items : center;  }
+.sec        {   margin-bottom   :  30vh         ;  }
+.post       {   flex            :  0 60%        ;   min-height : 300px  ;  }
+.post>div   {   padding         :  30px 5vw     ;  }
+.postillu   {   flex            :  0 40%        ;   min-height : 300px  ;  }
+.postillu>a {   display         :  block        ;   width      : 100%   ;  }
 
 .postillu>a:hover{
-    background-image    :    url("../Images/loupe.png") ;
-    background-repeat   :    no-repeat                  ;
-    background-position :    center                     ;
+    background-image    :    url(   "../Images/loupe.png"   )   ;
+    background-repeat   :    no-repeat                          ;
+    background-position :    center                             ;
 }
 .postillu>div img{
     box-sizing  : border-box  ;
@@ -372,15 +367,14 @@ h2{
     height      : 100%        ;
 }
 
-/* RESPONSIVE<<_________________________________________________________ */
+/* RESPONSIVE<<___________________________________________________________ */
 
-/* small<<______________________________ */
+/* small<<________________________________________________________________ */
 @media (    min-width   : 650px   ) {
 
 }
 
-
-/* medium<<______________________________ */
+/* medium<<_______________________________________________________________ */
 @media (    min-width   : 900px   ) {
 
         .container  {   width: 85%;   max-width:  1200px;   }
@@ -393,12 +387,11 @@ h2{
 
 }
 
-
-/* large<<______________________________ */
+/* large<<________________________________________________________________ */
 @media (    min-width   : 1190px  ) {
 
         .container  {   width: 80%;   max-width:  1200px;   }
 
 }
 
-/* RESPONSIVE>>_________________________________________________________ */
+/* RESPONSIVE>>___________________________________________________________ */
