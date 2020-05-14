@@ -320,7 +320,15 @@ h2{
     align-self          : stretch   ;
 }
 .img-cover a    {   display: block  ;     height : 100%          }
-.loopBox        {   display: flex   ;     align-items: center;   }
+/* .loopBox        {   display: flex   ;     align-items: center;   } supprimer? */
+.foire1     {   background-image: url(  "../Images/foires/HallegourmandeSaint-Pierre.png"            );  }
+.foire2     {   background-image: url(  "../Images/foires/SaintHilaire.png"            );  }
+.foire3     {   background-image: url(  "../Images/foires/Champeix.png"            );  }
+.foire4     {   background-image: url(  "../Images/foires/Plauzat.png"            );  }
+.foire5     {   background-image: url(  "../Images/foires/Issoire.png"            );  }
+.foire6     {   background-image: url(  "../Images/foires/Riom.png"            );  }
+.foire7     {   background-image: url(  "../Images/foires/PuceClermont.png"            );  }
+.foire8     {   background-image: url(  "../Images/foires/Viverols.pngg"            );  }
 
 /* lieux */
 .lieux1     {   background-image:  url(  "../Images/lieux/puydedome/PuyLarge.jpg"         );  }
@@ -348,6 +356,9 @@ h2{
 }
 
 .secPost    {   justify-content :  space-between;   align-items : center;  }
+.secCol {   flex-wrap: wrap;}
+.secCol>.postillu   {   flex: 0 100%;}
+.secCol>.post   {   flex: 0 100%;}
 .sec        {   margin-bottom   :  30vh         ;  }
 .post       {   flex            :  0 60%        ;   min-height : 300px  ;  }
 .post>div   {   padding         :  30px 5vw     ;  }
@@ -366,6 +377,8 @@ h2{
     width       : 100%        ;
     height      : 100%        ;
 }
+
+
 
 /* SLIDER<<_______________________________________________________________________ */
 /* Radio  */
