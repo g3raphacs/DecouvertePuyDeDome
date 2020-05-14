@@ -89,9 +89,9 @@
 /* gradients */
 .BCKgradBlue    {   background-image   : linear-gradient(45deg,var(--Col_Grad1),var(--Col_Main));  }
 /* shadows */
-.shadow         {   box-shadow         : 0px 8px 6px    var(--Col_Shadow);          }
+.shadow         {   box-shadow         : 0px 8px 6px    rgba(0, 0, 0, 0.25);         }
 .shadowLarge    {   box-shadow         : 3px 3px 20px   rgba(0, 0, 0, 0.164);     }
-.shadowPost     {   box-shadow         : 3px 3px 10px   rgba(10, 99, 117,0.25);   }
+.shadowPost     {   box-shadow         : 3px 3px 10px   rgba(0, 0, 0, 0.25);   }
 .txtshadow      {   text-shadow        : 3px 3px 4px    var(--Col_Shadow);          }
 
 /* borders */
@@ -286,7 +286,7 @@ nav li a{
 /* Slogan>>______________________________________________________________ */
 
 /* TITLES>>______________________________________________________________ */
-#blocTitle          {   margin-bottom: 30vh;   min-height: 300px;  }
+#blocTitle          {   margin-bottom: 30vh; min-height: 300px;  }
 #blocTitle p        {   width  :   95%;   }
 .colorLine          {   height :   15vw;       min-height: 100px;  }
 .colorLine>div      {   width  :   25%;   }
@@ -320,7 +320,7 @@ h2{
     align-self          : stretch   ;
 }
 .img-cover a    {   display: block  ;     height : 100%          }
-/* .loopBox        {   display: flex   ;     align-items: center;   } supprimer? */
+
 .foire1     {   background-image: url(  "../Images/foires/HallegourmandeSaint-Pierre.png"            );  }
 .foire2     {   background-image: url(  "../Images/foires/SaintHilaire.png"            );  }
 .foire3     {   background-image: url(  "../Images/foires/Champeix.png"            );  }
@@ -329,6 +329,14 @@ h2{
 .foire6     {   background-image: url(  "../Images/foires/Riom.png"            );  }
 .foire7     {   background-image: url(  "../Images/foires/PuceClermont.png"            );  }
 .foire8     {   background-image: url(  "../Images/foires/Viverols.png"            );  }
+
+.actu1     {   background-image: url(  "../Images/actu/actu1.jpeg"            );  }
+.actu2     {   background-image: url(  "../Images/actu/actu2.jpeg"            );  }
+.actu3     {   background-image: url(  "../Images/actu/actu3.jpeg"            );  }
+.actu4     {   background-image: url(  "../Images/actu/actu4.jpeg"            );  }
+.actu5     {   background-image: url(  "../Images/actu/actu5.jpeg"            );  }
+.actu6     {   background-image: url(  "../Images/actu/actu6.jpeg"            );  }
+.actu7     {   background-image: url(  "../Images/actu/actu7.jpeg"            );  }
 
 /* lieux */
 .lieux1     {   background-image:  url(  "../Images/lieux/puydedome/PuyLarge.jpg"         );  }
@@ -359,7 +367,7 @@ h2{
 .secCol {   flex-wrap: wrap;}
 .secCol>.postillu   {   flex: 0 100%;}
 .secCol>.post   {   flex: 0 100%;}
-.sec        {   margin-bottom   :  30vh         ; display: flex; flex-direction: column; justify-content: space-between; }
+.sec        {   margin-bottom   :  15vh         ; display: flex; flex-direction: column; justify-content: space-between; }
 .post       {   flex            :  0 60%        ;   min-height : 300px  ;  }
 .post>div   {   padding         :  30px 5vw     ;  }
 .postillu   {   flex            :  0 40%        ;   min-height : 300px  ;  }
@@ -379,9 +387,24 @@ h2{
     height      : 100%        ;
 }
 
-.wrapMarche {   display: flex; justify-content:space-around; flex-wrap: wrap;}
-.wrapMarche>.sec {   flex: 0 31%; margin-bottom: 100px;}
-.wrapMarche .post {  height: 400px;}
+.wrap3 {   display: flex; justify-content:space-around; flex-wrap: wrap;}
+.wrap3>.sec {   flex: 0 31%; margin-bottom: 100px;}
+#foires.wrap3 .post {  height: 400px;}
+#actu .post{ min-height: 250px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 0px 20px}
+.ActuButton{
+    text-align: center;
+    margin: 40px 0px;
+}
+.ActuButton , .ActuButton>a{
+    text-align: center;
+    background-color: var(--Col_SecLight);
+    padding: 4px 8px;
+    display: inline-block;
+}
+
+
+.ReadBack{background-color: rgb(42, 42, 42);padding: 100px 0px 0px 0px;}
+
 
 
 
