@@ -368,7 +368,7 @@ h2{
 .secCol>.postillu   {   flex: 0 100%;}
 .secCol>.post   {   flex: 0 100%;}
 .sec        {   margin-bottom   :  15vh         ; display: flex; flex-direction: column; justify-content: space-between; }
-.post       {   flex            :  0 60%        ;   min-height : 300px  ;  }
+.post       {   flex            :  0 60%        ;   min-height : 300px  ; overflow: hidden }
 .post>div   {   padding         :  30px 5vw     ;  }
 .postillu   {   flex            :  0 40%        ;   min-height : 300px  ;  }
 .postillu>a {   display         :  block        ;   width      : 100%   ;  }
@@ -404,9 +404,13 @@ h2{
 
 
 .ReadBack{background-color: rgb(42, 42, 42);padding: 100px 0px 0px 0px;}
+.ReadBack>div:first-child{padding: 0px 0px 1px 0px;}
+
 
 footer{padding: 2px 0px}
-
+footer p {line-height: 3rem;}
+/* footer a {display:block} */
+#iconMail{position: relative; top: 5px; padding-right: 10px;}
 
 
 /* SLIDER<<_______________________________________________________________________ */
