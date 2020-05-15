@@ -424,6 +424,7 @@ footer p {line-height: 3rem;}
 
 #SideBarBlock{
     max-width: 250px;
+
 }
 #SideBarBlock img{
     object-fit      : contain       ;
@@ -436,9 +437,19 @@ footer p {line-height: 3rem;}
 aside{
     width:315px;
     position: fixed;
-    top: 50vh;
-    right: 0px;
-    z-index: 99;
+    top: 25vh;
+    right: -250px;
+    z-index: 10;
+}
+.SideElement{
+    position: absolute;
+    top: 0px;
+}
+#sideElementClosed{
+    display: none;
+}
+#sideElementOpen{
+    display: none;
 }
 
 /* SLIDER<<_______________________________________________________________________ */
