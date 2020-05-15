@@ -412,6 +412,19 @@ footer p {line-height: 3rem;}
 /* footer a {display:block} */
 #iconMail{position: relative; top: 5px; padding-right: 10px;}
 
+#SideBarBlock , #SideBarButton{
+    box-shadow: -4px 7px 4px rgba(0, 0, 0, 0.2);
+}
+#SideBarButton{
+    padding: 8PX 20px 0px 15px;
+    border-radius: 20px 0px 0px 20px;
+    position: relative;
+    top:150px
+}
+
+#SideBarBlock{
+    padding: 10px 25px;
+}
 
 /* SLIDER<<_______________________________________________________________________ */
 /* Radio  */
