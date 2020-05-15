@@ -416,14 +416,29 @@ footer p {line-height: 3rem;}
     box-shadow: -4px 7px 4px rgba(0, 0, 0, 0.2);
 }
 #SideBarButton{
-    padding: 8px 10px 0px 15px;
+    padding: 8px 0px 0px 15px;
     border-radius: 20px 0px 0px 20px;
     position: relative;
     top:100px
 }
 
 #SideBarBlock{
-    padding: 10px 25px;
+    max-width: 250px;
+}
+#SideBarBlock img{
+    object-fit      : contain       ;
+    width           : 100%          ;
+    height          : 100%          ;
+    max-width       : 80vh          ;
+    width: 100%;
+}
+
+aside{
+    width:315px;
+    position: fixed;
+    top: 50vh;
+    right: 0px;
+    z-index: 99;
 }
 
 /* SLIDER<<_______________________________________________________________________ */
@@ -494,9 +509,7 @@ background-position: center;
 	0%{	opacity:.4;}
 	100%{opacity:1;}
 }
-/* SLIDER>>_______________________________________________________________________ */
-
-aside{margin-top: 300px;}
+/* SLIDER>>_______________________________________________________________ */
 
 /* RESPONSIVE<<___________________________________________________________ */
 
