@@ -326,16 +326,16 @@ h2{
 .actu7     {   background-image: url(  "../Images/actu/actu7.jpeg"            );  }
 
 /* lieux */
-.lieux1     {   background-image:  url(  "../Images/lieux/puydedome/PuySmall.jpg"         );  }
-.lieux2     {   background-image:  url(  "../Images/lieux/chainedespuys/chaineSmall.jpg"  );  }
-.lieux3     {   background-image:  url(  "../Images/lieux/cathedrale/CathedraleSmall.jpg" );  }
-.lieux4     {   background-image:  url(  "../Images/lieux/vulcania/vulcaniaSmall.jpg"     );  }
-.lieux5     {   background-image:  url(  "../Images/lieux/lacdeguery/guerySmall.jpg"      );  }
-.lieux6     {   background-image:  url(  "../Images/lieux/grottepierre/grotteSmall.jpg"   );  }
-.lieux7     {   background-image:  url(  "../Images/lieux/superbesse/SuperBesseSmall.jpg" );  }
-.lieux8     {   background-image:  url(  "../Images/lieux/gergovie/GergovieSmall.jpg"     );  }
-.lieux9     {   background-image:  url(  "../Images/lieux/lacPavin/PavinSmall.jpg"        );  }
-.lieux10    {   background-image:  url(  "../Images/lieux/murol/MurolSmall.jpg"           );  }
+.lieux1     {   background-image:  url(  "../Images/lieux/puydedome/PuyLarge.jpg"         );  }
+.lieux2     {   background-image:  url(  "../Images/lieux/chainedespuys/chaineLarge.jpg"  );  }
+.lieux3     {   background-image:  url(  "../Images/lieux/cathedrale/CathedraleLarge.jpg" );  }
+.lieux4     {   background-image:  url(  "../Images/lieux/vulcania/vulcaniaLarge.jpg"     );  }
+.lieux5     {   background-image:  url(  "../Images/lieux/lacdeguery/gueryLarge.jpg"      );  }
+.lieux6     {   background-image:  url(  "../Images/lieux/grottepierre/grotteLarge.jpg"   );  }
+.lieux7     {   background-image:  url(  "../Images/lieux/superbesse/SuperBesseLarge.jpg" );  }
+.lieux8     {   background-image:  url(  "../Images/lieux/gergovie/GergovieLarge.jpg"     );  }
+.lieux9     {   background-image:  url(  "../Images/lieux/lacPavin/PavinLarge.jpg"        );  }
+.lieux10    {   background-image:  url(  "../Images/lieux/murol/MurolLarge.jpg"           );  }
 
 /* SECTIONS>>_____________________________________________________________ */
 .secTopBar{
@@ -358,7 +358,7 @@ h2{
 .post       {   flex            :  0 60%        ;   min-height : 300px  ; overflow: hidden }
 .post>div   {   padding         :  30px 5vw     ;  }
 .postillu   {   flex            :  0 40%        ;   min-height : 300px  ;  }
-.postillu>a {   display         :  block        ;   width      : 100%   ;  }
+.postillu>a {   display         :  block        ;   width      : 100%   ; min-height: 300px;}
 .post ul{padding-left: 0px;}
 
 .postillu>a:hover{
