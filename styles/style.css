@@ -419,7 +419,11 @@ footer p {line-height: 3rem;}
     padding: 8px 0px 0px 15px;
     border-radius: 20px 0px 0px 20px;
     position: relative;
-    top:100px
+    top:100px;
+    cursor: pointer;
+}
+.SideBarButton:hover{
+    background-color: var(--Col_SecLight);
 }
 
 .SideBarBlock{
@@ -446,15 +450,14 @@ aside{
     position: absolute;
     top: 0px;
 }
-#sideElementClosed{
-    display: none;
-}
-#sideElementOpen{
-    display: none;
-}
-aside:hover{right:0px}
 
-#sidebool{display: none;}
+#sidebool{position: fixed;
+top: 25px;
+left:25px;
+}
+#sidebool:checked ~ aside{right: 0px;
+    }
+
 
 /* SLIDER<<_______________________________________________________________________ */
 /* Radio  */
