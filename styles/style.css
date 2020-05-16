@@ -152,14 +152,6 @@ p strong    {   font-weight     : 900;   }
 [href]      {   text-decoration : none;  }
 /* Generic>>_________________________________________________________________ */
 
-/* Containers<<______________________________________________________________ */
-.container{
-    max-width       : 1200px    ;
-    margin          : 0 auto    ;
-    padding-left    : 10px      ;
-    padding-right   : 10px      ;
-}/* Containers>>_____________________________________________________________ */
-
 /* Box Model<<_______________________________________________________________ */
 .m0         {   margin:    0px;     }
 .p0         {   padding:   0px;     }
@@ -172,7 +164,7 @@ p strong    {   font-weight     : 900;   }
 .rotLeft    {   transform : rotate(-3deg);  }
 
 /* NAVBAR<<__________________________________________________________________ */
-
+span.buttonTXT{padding-left: 10px;}
 .navbar{
     position        : sticky        ;
     position: -webkit-sticky        ;
@@ -207,12 +199,7 @@ p strong    {   font-weight     : 900;   }
     flex-wrap       : wrap          ;
     align-items     : stretch       ;
 }
-.buttonTXT  {   display : none;    padding-left: 10px   }
-.icon{
-    font-size       : 2rem          ;
-    padding-bottom  : 10px          ;
-    padding-top     : 10px          ;
-}
+
 nav         {   align-items: stretch;   flex: 0 100%;   }
 nav li{
     list-style      : none          ;
@@ -401,8 +388,6 @@ h2{
     padding: 4px 8px;
     display: inline-block;
 }
-
-
 .ReadBack{background-color: rgb(42, 42, 42);padding: 100px 0px 0px 0px;}
 .ReadBack>div:first-child{padding: 0px 0px 100px 0px;}
 
@@ -509,30 +494,51 @@ footer p {line-height: 3rem;}
 #iconMail{position: relative; top: 5px; padding-right: 10px;}
 /* FOOTER>>___________________________________________________________ */
 
-/* RESPONSIVE<<___________________________________________________________ */
-/* small<<________________________________________________________________ */
-@media (    min-width   : 650px   ) {
+/* RESPONSIVE_________________________________________________________________________*/
+
+/* XL ________________________________________________________________________________*/
+
+    .container  {max-width:  1200px;  margin: 0 auto ;}
+
+/* L _________________________________________________________________________________*/
+@media (max-width: 1349.98px) {
+    .container  { margin: 0 7vw ;}
+    .wrap3>.sec {   flex: 0 48%;}
 
 }
 
-/* medium<<_______________________________________________________________ */
-@media (    min-width   : 900px   ) {
+/* M _________________________________________________________________________________*/
+@media (max-width: 991.98px) {
+    /* navbar  */
+    .buttonTXT  {   display : none;    padding-left: 10px   }
+    .icon{
+        font-size       : 2rem          ;
+        padding-bottom  : 10px          ;
+        padding-top     : 10px          ;
+    }
+    .wrap3  {   justify-content: space-between; }
+    .unflex {   flex-direction: column;         }
+}
 
-        .container  {   width: 85%;   max-width:  1200px;   }
-        .buttonTXT  {   display: inline;    }
-        .icon       {
-            font-size       : 1rem  ;
-            padding-bottom  : 0px   ;
-            padding-top     : 0px   ;
+/* S _________________________________________________________________________________*/
+@media (max-width: 767.98px) {
+    .container  { margin: 0 4vw ;}
+    .wrap3>.sec {   flex: 0 100%;}
+    .rotRight   {   transform : rotate(0deg);   }
+    .rotLeft    {   transform : rotate(0deg);  }
+
+    .next{
+        height: 60px;
+        width: inherit;
+        top: 400px;
         }
-
+    .Slidecontainer{
+        min-height: 400px;
+        background-color:rgb(32, 165, 165);
+        margin-bottom: 100px;
+        }
 }
 
-/* large<<________________________________________________________________ */
-@media (    min-width   : 1190px  ) {
-
-        .container  {   width: 80%;   max-width:  1200px;   }
-
+/* XS _________________________________________________________________________________*/
+@media (max-width: 575.98px) {
 }
-
-/* RESPONSIVE>>___________________________________________________________ */
