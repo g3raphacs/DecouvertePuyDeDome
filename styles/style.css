@@ -404,60 +404,7 @@ h2{
 
 
 .ReadBack{background-color: rgb(42, 42, 42);padding: 100px 0px 0px 0px;}
-.ReadBack>div:first-child{padding: 0px 0px 1px 0px;}
-
-
-footer{padding: 2px 0px}
-footer p {line-height: 3rem;}
-/* footer a {display:block} */
-#iconMail{position: relative; top: 5px; padding-right: 10px;}
-
-.SideBarBlock , .SideBarButton{
-    box-shadow: -4px 7px 4px rgba(0, 0, 0, 0.2);
-}
-.SideBarButton{
-    padding: 8px 0px 0px 15px;
-    border-radius: 20px 0px 0px 20px;
-    position: relative;
-    top:100px;
-    cursor: pointer;
-}
-.SideBarButton:hover{
-    background-color: var(--Col_SecLight);
-}
-
-.SideBarBlock{
-    max-width: 250px;
-
-}
-.SideBarBlock img{
-    object-fit      : contain       ;
-    width           : 100%          ;
-    height          : 100%          ;
-    max-width       : 80vh          ;
-    width: 100%;
-}
-
-aside{
-    width:315px;
-    position: fixed;
-    top: 25vh;
-    right: -250px;
-    z-index: 10;
-    transition: ease-in-out 0.4s;
-}
-.SideElement{
-    position: absolute;
-    top: 0px;
-}
-
-#sidebool{position: fixed;
-top: 25px;
-left:25px;
-}
-#sidebool:checked ~ aside{right: 0px;
-    }
-
+.ReadBack>div:first-child{padding: 0px 0px 100px 0px;}
 
 /* SLIDER<<_______________________________________________________________________ */
 /* Radio  */
@@ -467,8 +414,8 @@ left:25px;
 position: relative;
 min-height: 70vh;
 background-color:rgb(32, 165, 165);
+margin-bottom: 100px;
 }
-
 /* fleche */
 .next{
 background-image: url("/Images/accueil/SlideR.svg");
@@ -484,12 +431,10 @@ background-repeat: no-repeat;
 background-position: center;
 background-size: 45px;
 }
-
 .next:hover{
 transition: .3s;
 background-color: var(--Col_Comp);
 }
-
 /* Images  */
 #one	{	background-image: url("/Images/accueil/fullsize/1.jpg");	}
 #two	{	background-image: url("/Images/accueil/fullsize/2.jpg");	}
@@ -500,7 +445,6 @@ background-color: var(--Col_Comp);
 #seven	{	background-image: url("/Images/accueil/fullsize/7.jpg");	}
 #eight	{	background-image: url("/Images/accueil/fullsize/8.jpg");	}
 #nine	{	background-image: url("/Images/accueil/fullsize/9.jpg");	}
-
 .slide_img{
 position: absolute;
 width: 100%;
@@ -510,7 +454,6 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 }
-
 /* Image Switch  */
 #i1:checked ~ #one  ,
 #i2:checked ~ #two  ,
@@ -522,15 +465,51 @@ background-position: center;
 #i8:checked ~ #eight,
 #i9:checked ~ #nine
 {z-index: 9; animation: scroll 1s ease-in-out;}
-
 @keyframes scroll{
 	0%{	opacity:.4;}
 	100%{opacity:1;}
 }
 /* SLIDER>>_______________________________________________________________ */
 
-/* RESPONSIVE<<___________________________________________________________ */
+/* SIDEBAR<<___________________________________________________________ */
+.SideBarBlock , .SideBarButton{ box-shadow: -4px 7px 4px rgba(0, 0, 0, 0.2);    }
+.SideBarButton{
+    padding: 8px 0px 0px 15px;
+    border-radius: 40px 0px 0px 40px;
+    position: relative;
+    top:100px;
+    cursor: pointer;
+}
+.SideBarButton:hover{   background-color: var(--Col_SecLight);  }
+.SideBarBlock{  max-width: 250px;   }
+.SideBarBlock img{
+    object-fit      : contain       ;
+    width           : 100%          ;
+    height          : 100%          ;
+    max-width       : 80vh          ;
+    width: 100%;
+}
+aside{
+    width:315px;
+    position: fixed;
+    top: 25vh;
+    right: -250px;
+    z-index: 10;
+    transition: ease-in-out 0.4s;
+}
+#sidebool{display: none;}
+#sidebool:checked ~ aside{right: 0px;}
+#sidebool:checked ~ aside>div>.SideBarButton:nth-child(1){display: none;}
+#sidebool:not(:checked) ~ aside>div>.SideBarButton:nth-child(2){display: none;}
+/* SIDEBAR>>___________________________________________________________ */
 
+/* FOOTER<<___________________________________________________________ */
+footer{padding: 2px 0px}
+footer p {line-height: 3rem;}
+#iconMail{position: relative; top: 5px; padding-right: 10px;}
+/* FOOTER>>___________________________________________________________ */
+
+/* RESPONSIVE<<___________________________________________________________ */
 /* small<<________________________________________________________________ */
 @media (    min-width   : 650px   ) {
 
