@@ -164,12 +164,13 @@ p strong    {   font-weight     : 900;   }
 .rotLeft    {   transform : rotate(-3deg);  }
 
 /* NAVBAR<<__________________________________________________________________ */
+
 span.buttonTXT{padding-left: 10px;}
 .navbar{
     position        : sticky        ;
     position: -webkit-sticky        ;
     top             : 0             ;
-    z-index         : 10             ;
+    z-index         : 11            ;
     margin-bottom   : 30vh          ;
 }
 .navbar [href]{
@@ -213,6 +214,7 @@ nav li a{
     padding-left    : 15px          ;
     display         : flex          ;
     align-items     : center        ;
+    transition: ease-in-out 0.3s;
 }/* NAVBAR>>_____________________________________________________________ */
 
 /* Video<<_______________________________________________________________ */
@@ -223,7 +225,7 @@ nav li a{
     height          : 100vh         ;
     overflow        : hidden        ;
 }
-.panorama>source    {   object-fit: cover;    z-index: -1;   }
+.panorama>source    {   object-fit: cover;}
 .panorama{
     min-width             : 100%        ;
     min-height            : 100%        ;
@@ -231,7 +233,7 @@ nav li a{
     top                   : 50%         ;
     left                  : 50%         ;
     transform             : translateX(-50%) translateY(-50%)           ;
-    z-index               : -1          ;
+    z-index               : 11          ;
     background-image      : url(  "../Videos/PanoramaFallback.png"  )   ;
     background-size       : 100% 100%   ;
     background-position-x : 50%         ;
@@ -262,6 +264,7 @@ nav li a{
     font-size       : 1.7rem        ;
     letter-spacing  : 0.15rem       ;
     text-align      : center        ;
+    z-index         : 12            ;
 }
 #slogan div p               {   margin: 0px;    }
 #slogan div p:nth-child(2)  {   border-radius: 70px 5px;   padding: 5px 4vw;   }
@@ -275,7 +278,7 @@ nav li a{
 /* TITLES>>______________________________________________________________ */
 #blocTitle          {   margin-bottom: 30vh; min-height: 300px;  }
 #blocTitle p        {   width  :   95%;   }
-.colorLine          {   height :   15vw;       min-height: 100px;  }
+.colorLine          {   height :   15vw;       min-height: 100px; position: relative; z-index: 11;}
 .colorLine>div      {   width  :   25%;   }
 .colorLineNav       {   height :   5px;   }
 .colorLineNav>div   {   width  :   25%;   }
@@ -358,13 +361,26 @@ h2{
 .post       {   flex            :  0 60%        ;   min-height : 300px  ; overflow: hidden }
 .post>div   {   padding         :  30px 5vw     ;  }
 .postillu   {   flex            :  0 40%        ;   min-height : 300px  ;  }
-.postillu>a {   display         :  block        ;   width      : 100%   ; min-height: 300px;}
 .post ul{padding-left: 0px;}
+
+.postillu>a {
+       display:  block;
+        width: 100%   ;
+        min-height: 300px;
+        transition: ease-in-out 0.3s;
+        background-image    :    url(   "../Images/loupe.png"   )   ;
+        background-repeat   :    no-repeat                          ;
+        background-position :    cover                             ;
+        background-size: 300px;
+        opacity: 0;
+}
 
 .postillu>a:hover{
     background-image    :    url(   "../Images/loupe.png"   )   ;
     background-repeat   :    no-repeat                          ;
     background-position :    center                             ;
+    background-size: 80px;
+    opacity: 1;
 }
 .postillu>div img{
     box-sizing  : border-box  ;
@@ -374,7 +390,7 @@ h2{
     height      : 100%        ;
 }
 
-.wrap3 {   display: flex; justify-content:space-around; flex-wrap: wrap;}
+.wrap3 {   display: flex; justify-content:space-evenly; flex-wrap: wrap;}
 .wrap3>.sec {   flex: 0 31%; margin-bottom: 100px;}
 #foires.wrap3 .post {  height: 400px;}
 #actu .post{ min-height: 250px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 0px 20px}
@@ -459,13 +475,14 @@ background-position: center;
 /* SIDEBAR<<___________________________________________________________ */
 .SideBarBlock , .SideBarButton{ box-shadow: -4px 7px 4px rgba(0, 0, 0, 0.2);    }
 .SideBarButton{
-    padding: 8px 0px 0px 15px;
+    padding: 4px 0px 0px 15px;
     border-radius: 40px 0px 0px 40px;
     position: relative;
     top:100px;
     cursor: pointer;
+    transition: ease-in-out 0.3s;
 }
-.SideBarButton:hover{   background-color: var(--Col_SecLight);  }
+.SideBarButton:hover{   background-color: var(--Col_Sec);  }
 .SideBarBlock{  max-width: 250px;   }
 .SideBarBlock img{
     object-fit      : contain       ;
@@ -474,16 +491,20 @@ background-position: center;
     max-width       : 80vh          ;
     width: 100%;
 }
+.SideBarBlock>p:nth-child(2)>a{position: relative; top: 6px;}
+.SideElement{
+    align-items: start ;
+}
 aside{
     width:315px;
     position: fixed;
-    top: 25vh;
+    top: 38vh;
     right: -250px;
     z-index: 10;
     transition: ease-in-out 0.4s;
 }
 #sidebool{display: none;}
-#sidebool:checked ~ aside{right: 0px;}
+#sidebool:checked ~ aside{right: -80px; transform: rotate(-20deg);}
 #sidebool:checked ~ aside>div>.SideBarButton:nth-child(1){display: none;}
 #sidebool:not(:checked) ~ aside>div>.SideBarButton:nth-child(2){display: none;}
 /* SIDEBAR>>___________________________________________________________ */
@@ -504,6 +525,7 @@ footer p {line-height: 3rem;}
 @media (max-width: 1349.98px) {
     .container  { margin: 0 7vw ;}
     .wrap3>.sec {   flex: 0 48%;}
+    .wrap3  {   justify-content: space-between; }
 
 }
 
@@ -516,7 +538,6 @@ footer p {line-height: 3rem;}
         padding-bottom  : 10px          ;
         padding-top     : 10px          ;
     }
-    .wrap3  {   justify-content: space-between; }
     .unflex {   flex-direction: column;         }
 }
 
