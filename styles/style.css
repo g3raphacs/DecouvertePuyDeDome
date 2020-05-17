@@ -353,11 +353,11 @@ h2{
     margin-right    : 20px      ;
 }
 
-.secPost    {   justify-content :  space-between;   align-items : center;  }
+.secPost    {   justify-content :  space-between;   align-items : center;  transition: ease-in-out 0.5s;}
 .secCol {   flex-wrap: wrap;}
 .secCol>.postillu   {   flex: 0 100%;}
 .secCol>.post   {   flex: 0 100%;}
-.sec        {   margin-bottom   :  15vh         ; display: flex; flex-direction: column; justify-content: space-between; }
+.sec        {   margin-bottom   :  15vh         ; display: flex; flex-direction: column; justify-content: space-between; transition: ease-in-out 0.5s; }
 .post       {   flex            :  0 60%        ;   min-height : 300px  ; overflow: hidden }
 .post>div   {   padding         :  30px 5vw     ;  }
 .postillu   {   flex            :  0 40%        ;   min-height : 300px  ;  }
@@ -390,7 +390,7 @@ h2{
     height      : 100%        ;
 }
 
-.wrap3 {   display: flex; justify-content:space-evenly; flex-wrap: wrap;}
+.wrap3 {   display: flex; justify-content:space-evenly; flex-wrap: wrap; transition: ease-in-out 0.5s;}
 .wrap3>.sec {   flex: 0 31%; margin-bottom: 100px;}
 #foires.wrap3 .post {  height: 400px;}
 #actu .post{ min-height: 250px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; padding: 0px 20px}
@@ -519,7 +519,7 @@ footer p {line-height: 3rem;}
 
 /* XL ________________________________________________________________________________*/
 
-    .container  {max-width:  1200px;  margin: 0 auto ;}
+    .container  {max-width:  1200px;  margin: 0 auto ; transition: ease-in-out 0.5s;}
 
 /* L _________________________________________________________________________________*/
 @media (max-width: 1349.98px) {
