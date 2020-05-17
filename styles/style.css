@@ -416,7 +416,7 @@ margin-bottom: 100px;
 }
 /* fleche */
 .next{
-background-image: url("/Images/accueil/SlideR.svg");
+background-image: url("../Images/accueil/SlideR.svg");
 width: 60px;
 height: inherit;
 position: absolute;
@@ -434,15 +434,15 @@ transition: .3s;
 background-color: var(--Col_Comp);
 }
 /* Images  */
-#one	{	background-image: url("/Images/accueil/fullsize/1.jpg");	}
-#two	{	background-image: url("/Images/accueil/fullsize/2.jpg");	}
-#three	{	background-image: url("/Images/accueil/fullsize/3.jpg");	}
-#four	{	background-image: url("/Images/accueil/fullsize/4.jpg");	}
-#five	{	background-image: url("/Images/accueil/fullsize/5.jpg");	}
-#six	{	background-image: url("/Images/accueil/fullsize/6.jpg");	}
-#seven	{	background-image: url("/Images/accueil/fullsize/7.jpg");	}
-#eight	{	background-image: url("/Images/accueil/fullsize/8.jpg");	}
-#nine	{	background-image: url("/Images/accueil/fullsize/9.jpg");	}
+#one	{	background-image: url("../Images/accueil/fullsize/1.jpg");	}
+#two	{	background-image: url("../Images/accueil/fullsize/2.jpg");	}
+#three	{	background-image: url("../Images/accueil/fullsize/3.jpg");	}
+#four	{	background-image: url("../Images/accueil/fullsize/4.jpg");	}
+#five	{	background-image: url("../Images/accueil/fullsize/5.jpg");	}
+#six	{	background-image: url("../Images/accueil/fullsize/6.jpg");	}
+#seven	{	background-image: url("../Images/accueil/fullsize/7.jpg");	}
+#eight	{	background-image: url("../Images/accueil/fullsize/8.jpg");	}
+#nine	{	background-image: url("../Images/accueil/fullsize/9.jpg");	}
 .slide_img{
 position: absolute;
 width: 100%;
