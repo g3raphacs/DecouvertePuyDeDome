@@ -558,6 +558,22 @@ footer p {line-height: 3rem;}
         background-color:rgb(32, 165, 165);
         margin-bottom: 100px;
         }
+
+        /* SIDEBAR<<___________________________________________________________ */
+.SideBarBlock , .SideBarButton{ box-shadow: none;    }
+.SideBarButton{display: none;}
+.SideBarBlock{  max-width: 100%;  background-color: rgba(250, 42, 42,0); padding: 20px 0px 35px 0px; }
+.SideBarBlock>p:nth-child(2)>a{position: relative; top: 0px;}
+.SideBarBlock img{box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.246);}
+.SideElement{justify-content: center;}
+aside{
+    width:100%;
+    position: relative;
+    top:0;
+    right: 0;
+    background-color: var(--Col_Main);
+}
+/* SIDEBAR>>___________________________________________________________ */
 }
 
 /* XS _________________________________________________________________________________*/
